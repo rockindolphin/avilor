@@ -1,0 +1,23 @@
+
+.header__nav-info{
+	margin-bottom: 1500px !important;
+	display: flex;
+	align-items: flex-start;
+	text-align: left;	
+	& .info__phone{
+		color: var(--black);
+	}
+	& .info__email{
+		margin-bottom: 20px;
+	}
+	& .info__adress{
+
+	}
+	@media (--medium-viewport){
+
+	}	
+	@media (--large-viewport){
+		display: none;
+	}	
+}
+

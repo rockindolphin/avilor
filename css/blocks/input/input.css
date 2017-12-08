@@ -1,0 +1,18 @@
+
+.input{
+	min-height: var(--input-min-height);
+	background-color: var(--white);
+	box-shadow: none;
+	border:  1px solid;
+	border-color: var(--gray_d8d);
+	padding-left: 18px;
+	padding-right: 18px;
+	font-size: 14px;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	&:matches(:focus, .input--focus){
+		outline: none;
+		box-shadow: 0 0 0 2px var(--outline-color) inset;
+	}
+}
+

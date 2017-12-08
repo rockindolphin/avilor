@@ -1,0 +1,32 @@
+
+.page__wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--page-gap);
+	padding-right: var(--page-gap);
+	width: 100%;
+	max-width: calc( 1140px + var(--page-gap)*2 );
+	& .box--wide{
+		margin-left: calc(-1*var(--page-gap));
+		margin-right: calc(-1*var(--page-gap));
+		width: initial;
+		max-width: initial;
+	}
+}
+
+
+@media (--medium-viewport){
+	.page__wrapper{
+
+	}
+}
+
+@media (--large-viewport) {
+	.page__wrapper{
+
+	}
+}
+
+
+
+

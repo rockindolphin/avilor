@@ -1,0 +1,120 @@
+
+:root{
+	/*Variables*/
+	--page-gap: 15px; 
+	--input-min-height:  34px;
+	--btn-min-side:  44px;
+	--menu-rad:  40px;
+	--scrollbar-width:  0px;
+
+	/*Colors*/
+	--black: #000000;
+	--white: #ffffff;
+	--purple_af0:  #af008a;
+	--red_c11:  #c11a32;
+	--red_da0: #da0039;
+	--red_ca1:  #ca1533;
+	--yellow_edc:  #edc40d;
+	--gray_575:  #575756;
+	--green_7bb:  #7bb92e;
+	--yellow_fdf:  #fdf7eb;
+
+	--gray_565:  #565655;
+	--gray_585:  #585857;
+	--gray_d8d:  #d8d8d8;
+	--outline-color: color( #af008a alpha(-50%) ); 
+
+	--grad-main:  linear-gradient(to right, var(--purple_af0) 0%, var(--red_ca1) 100%);
+
+	/*Fonts*/
+	--fw-thin: 100;
+	--fw-extra-light: 200;
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-medium: 500;
+	--fw-semi-bold: 600;
+	--fw-bold: 700;
+	--fw-extra-bold: 800;
+	--fw-black: 900;	
+}
+
+
+@custom-media --medium-viewport (width > 639px);
+@custom-media --large-viewport (width > 1023px);
+
+/* FONTS */
+
+
+@font-face {
+    font-family: Roboto;
+    src: 	'../fonts/Roboto/RobotoRegular.woff',
+    		'../fonts/Roboto/RobotoRegular.woff2';
+    font-style: normal;
+    font-weight: var(--fw-normal);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: 	'../fonts/Roboto/RobotoBold.woff',
+    		'../fonts/Roboto/RobotoBold.woff2';
+    font-style: normal;
+    font-weight: var(--fw-bold);
+}
+
+@font-face {
+    font-family: Rubic;
+    src: 	'../fonts/Rubic/RubicRegular.woff',
+    		'../fonts/Rubic/RubicRegular.woff2';
+    font-style: normal;
+    font-weight: var(--fw-normal);
+}
+
+@font-face {
+    font-family: Rubic;
+    src: 	'../fonts/Rubic/RubicMedium.woff',
+    		'../fonts/Rubic/RubicMedium.woff2';
+    font-style: normal;
+    font-weight: var(--fw-medium);
+}
+
+@font-face {
+    font-family: Circe;
+    src: 	'../fonts/Circe/CirceRegular.woff',
+    		'../fonts/Circe/CirceRegular.woff2';
+    font-style: normal;
+    font-weight: var(--fw-normal);
+}
+
+/* OTHER */
+
+*{
+	box-sizing: border-box;
+	max-width: 100%;
+	word-break: break-word;
+	&:matches(:active,:focus){
+		outline-color: var(--purple_af0);
+	}
+}
+
+html,
+body{
+	background-color: var(--yellow_fdf);
+	width: 100%;
+	min-height: 100%;
+	margin:  0;
+	padding: 0;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: var(--fw-normal);
+}
+
+img{
+	max-width: 100%;
+}
+
+@supports(object-fit: contain){
+	img{
+		max-width: initial;
+		object-fit: contain;
+	}
+}

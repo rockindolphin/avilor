@@ -1,0 +1,21 @@
+
+.header__search{
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-right: 20px;
+	& .input__wrapper{
+		margin-bottom: initial;
+		margin-right: initial;
+	}
+	@media (--medium-viewport){
+		
+	}
+	@media (--large-viewport){
+		display: flex;
+	}	
+}
+

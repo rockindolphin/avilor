@@ -1,0 +1,7 @@
+
+.page{ 
+	display: flex; /*fix бага ie11 с min-height:100%*/
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+}

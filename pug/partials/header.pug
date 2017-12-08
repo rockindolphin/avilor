@@ -1,0 +1,88 @@
+header.header.page__header.stickyfill
+	.wrapper.page__wrapper
+		.logo.header__logo
+			a.link(href="#")
+				object.icon.icon--active.icon--logo(type="image/svg+xml", data="../images/logo.svg" aria-label="Avilor")
+				.logo__text
+					.logo__text--title
+						svg.icon.icon--active.icon--logo-text
+							use(xlink:href="../images/sprite.svg#logo-text")
+					.logo__text--subtitle
+						| Здоровое и диетическое питание
+		.header__search
+			.input__wrapper.input--rounded
+				input.input(type="text", placeholder="Поиск")
+				button.btn.btn--clr.icon__wrapper
+					svg.icon.icon--active.icon--search
+						use(xlink:href="../images/sprite.svg#search")
+		.info.header__info
+			a.link.info__phone(href="tel:+74959897431")
+				| +7 495 989-7431
+			a.link.info__email(href="mailto:sale@avilor.ru")
+				| sale@avilor.ru
+		.header__menu-btn
+			button.btn.btn--clr
+				svg.icon.icon--menu-toggle
+					use(xlink:href="../images/sprite.svg#menu-toggle")
+	nav.header__nav
+		.wrapper.page__wrapper
+			.menu.header__menu.scroll--cutt
+				.menu__wrapper
+					.header__menu-btn
+						button.btn.btn--clr
+							svg.icon.icon--menu-toggle
+								use(xlink:href="../images/sprite.svg#menu-toggle")
+				ul.list.header__menu-list
+					li.list__item
+						.nav__item
+							a.link(href="#")
+								| О компании
+					li.list__item
+						.nav__item
+							a.link(href="#")
+								| Каталог
+							button.btn.btn--clr
+								svg.icon.icon--active.icon--chewron-down
+									use(xlink:href="../images/sprite.svg#chewron-down")
+						ul.list
+							li.list__item
+								.nav__item
+									a.link(href="#")
+										| Леденцы
+							li.list__item
+								.nav__item
+									a.link(href="#")
+										| Жвачка
+							li.list__item
+								.nav__item
+									a.link(href="#")
+										| Батончики
+							li.list__item
+								.nav__item
+									a.link(href="#")
+										| СТМ
+					li.list__item
+						.nav__item
+							a.link(href="#")
+								| Партнеры
+					li.list__item
+						.nav__item
+							a.link(href="#")
+								| Оптовикам
+					li.list__item
+						.nav__item
+							a.link(href="#")
+								| Контакты
+				.menu__wrapper
+					.info.header__info.header__nav-info
+						a.link.info__phone(href="tel:+74959897431")
+							| +7 495 989-7431
+						a.link.info__email(href="mailto:sale@avilor.ru")
+							| sale@avilor.ru
+						.info__adress
+							span
+								| Московская область,  
+							span
+								| город Королёв, 
+							span
+								| улица Калининградская 12	

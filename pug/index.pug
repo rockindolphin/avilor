@@ -1,0 +1,26 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	head
+		title Avilor
+		link(rel="stylesheet", href="../css/style.css")
+		link(rel="shortcut icon", type="image/png", href="../images/favicon.png")
+		meta(charset='utf-8')
+		meta(name="viewport", content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		if config.images.generateSpritePng
+			link(rel="stylesheet", href="../css/sprite.css")
+		script(src="../js/vendors/svg4everybody.min.js")
+	body.page
+		.page__body
+			include partials/header.pug
+			main.main.page__main
+				.wrapper.page__wrapper
+					include partials/test.pug
+					include partials/chosen.pug
+			include partials/footer.pug
+		script(src="../js/vendors/stickyfill.min.js")
+		script(src="../js/vendors/jquery-3.2.1.min.js")
+		script(src="../js/vendors/chosen.jquery.min.js")
+		script(src="../js/app.js")

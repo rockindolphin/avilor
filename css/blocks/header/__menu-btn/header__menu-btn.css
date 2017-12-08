@@ -1,0 +1,30 @@
+
+.header__menu-btn{
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-left: var(--page-gap);
+	margin-top: -5px;
+	margin-bottom: -4px;
+	& .icon{
+		opacity: 1;
+		fill: var(--red_ca1);
+		color:  transparent;
+	}			
+	& .icon--active{
+		fill:  transparent;
+		color: var(--red_ca1);
+	}
+	@media (--medium-viewport){			
+		border-left: 1px solid;
+		border-color: color(#000000 alpha(15%));
+		margin-top: initial;
+		margin-bottom: initial;					
+	}
+	@media (--large-viewport){
+		display: none;					
+	}			
+}
+
