@@ -25,6 +25,7 @@ nav.header__nav{
 			z-index: 1;
 			padding-left: 50px;
 			padding-right: 50px;
+			height: initial;
 			&::before{
 				content:  '';
 				display: block;

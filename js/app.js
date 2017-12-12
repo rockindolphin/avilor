@@ -53,5 +53,50 @@ $(document).ready(function() {
 		$(selector).chosen(config[selector]);
 	}
 
+	//section bg
+	$('img[data-bg=true]').each(function(){
+		var src = $(this).attr('src');
+		var parent = $(this).parent();
+		if( $(parent).is('picture') ){
+			parent =  $(parent).parent();
+			try{
+				if( Modernizr && Modernizr.webp){
+					src = src.replace(/\.(jpg|png)$/, '.webp'); 						
+				}
+			}catch(err){
+				console.log(err);
+			}
+		}
+		$(parent).css({
+			'background-image': `url(${src})`
+		});
+		$(this).hide();
+	});
+
+	//slider
+	var frontSliderPics = new Swiper('.slider--front-pics .swiper-container', {
+		slidesPerView: 1,
+		on: {
+			slideChange: function(){
+				frontSliderText.slideTo( this.activeIndex );
+			} 
+		}
+	});
+
+	var frontSliderText = new Swiper('.slider--front-text .swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		on: {
+			slideChange: function(){
+				frontSliderPics.slideTo( this.activeIndex );
+			} 		
+		}
+	});
 
 });	

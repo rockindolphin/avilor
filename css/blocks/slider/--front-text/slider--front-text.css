@@ -1,0 +1,47 @@
+
+.slider--front-text{
+	width: 100%;
+	max-width: calc(600px + 2*var(--page-gap));
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	font-size: 14px;
+	color: var(--gray_575);
+	padding-left: var(--page-gap);
+	padding-right: var(--page-gap);
+	margin-top: -80px;	
+	&::before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: var(--page-gap);
+		right: var(--page-gap);
+		height: 50%;
+		box-shadow: 0 8px 24px 0 color(#000000 alpha(15%));
+	}
+	& :--all-headers{
+		color: var(--black);
+		margin-top: 0.7em;
+		margin-bottom: 1em;
+	}
+	& .swiper-container{
+		border-radius: calc(2*var(--input-rad));
+		background: linear-gradient(to bottom, var(--white) 0%, var(--yellow_fdf) 100%);		
+	}
+	& .swiper-slide{
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	& .swiper-button-next{
+		right: 30px;
+	} 
+	& .swiper-button-prev{
+		left: 30px;
+	}
+}
+

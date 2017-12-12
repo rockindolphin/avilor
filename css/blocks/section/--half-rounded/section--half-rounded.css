@@ -1,0 +1,6 @@
+
+.section--half-rounded{
+	border-radius: var(--menu-rad) 0 var(--menu-rad) 0;
+	overflow:  hidden;	
+}
+

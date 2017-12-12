@@ -16,11 +16,55 @@ html(lang="ru")
 		.page__body
 			include partials/header.pug
 			main.main.page__main
+				section.section--wide.section--half-rounded.section--slider-front
+					//-img.img--section-bg(src="../images/bg-waves.jpg", alt="", data-bg="true")
+					.section__content
+						.slider.slider--front-pics
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide 
+										+picture({src:'slide-1.jpg', alt: 'slide-1', class:'slider__img', data:{'data-bg':'true'}})
+									.swiper-slide 
+										img.slider__img(src="../images/slide-2.jpg", alt="slide-2", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-3.jpg", alt="slide-3", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-4.jpg", alt="slide-4", data-bg="true")
+						.slider.slider--front-text
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide 
+										h5
+											| СТМ «Азбука эдоровья»
+										p
+											| Леденцы изготовленные по стариным рецептам на основе трав с ситамином «С» lorem
+									.swiper-slide 
+										h5
+											| СТМ «Азбука эдоровья»
+										p
+											| Леденцы изготовленные по стариным рецептам на основе трав с ситамином «С»
+									.swiper-slide 
+										h5
+											| СТМ «Азбука эдоровья»
+										p
+											| Леденцы изготовленные по стариным рецептам на основе трав с ситамином «С»
+									.swiper-slide 
+										h5
+											| СТМ «Азбука эдоровья»
+										p
+											| Леденцы изготовленные по стариным рецептам на основе трав с ситамином «С»
+								.swiper-pagination
+							.swiper-button-prev
+							.swiper-button-next
 				.wrapper.page__wrapper
-					include partials/test.pug
-					include partials/chosen.pug
+					p
+						|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quaerat sapiente atque, et ad, obcaecati! Cum obcaecati dicta voluptas asperiores, blanditiis possimus molestias, aperiam minima ex labore fuga rerum rem.
+				//-include partials/test.pug
+				//-include partials/chosen.pug
 			include partials/footer.pug
+		script(src="../js/vendors/modernizr-custom.js")
 		script(src="../js/vendors/stickyfill.min.js")
 		script(src="../js/vendors/jquery-3.2.1.min.js")
 		script(src="../js/vendors/chosen.jquery.min.js")
+		script(src="../js/vendors/swiper.min.js")
 		script(src="../js/app.js")
