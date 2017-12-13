@@ -2,10 +2,6 @@
 .btn{
 	min-width: var(--btn-min-side);
 	min-height: var(--btn-min-side);
-	display: inline-flex;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	&:matches(:focus, .btn--focus){
 		outline: none;
 		box-shadow: 0 0 0 2px var(--outline-color) inset;

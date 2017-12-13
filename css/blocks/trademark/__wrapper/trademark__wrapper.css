@@ -1,0 +1,33 @@
+
+.trademark__wrapper{
+	width: 100%;
+	max-width: 325px;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	@media (width>375px){
+		
+	}	
+	@media (width>775px){
+ 		max-width: 725px;
+	}
+	@supports(display: grid){
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto; 
+		grid-column-gap: 45px;
+		grid-row-gap: 30px;
+		@media (width>375px){
+			grid-template-columns:  repeat(2, 1fr);
+		}		
+		@media (width>775px){
+			grid-template-columns:  repeat(4, 1fr);
+			grid-column-gap: 55px;
+		}			
+	}	
+}
+

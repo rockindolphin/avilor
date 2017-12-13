@@ -1,0 +1,23 @@
+
+.trademark__pic{
+	width: 140px;
+	@media (--medium-viewport){
+		
+	}	
+	@media (--large-viewport){
+ 
+	}
+	/*
+	@supports(display: grid){
+		margin-left: initial;
+		margin-right: initial;
+		@media (--medium-viewport){
+
+		}	
+		@media (--large-viewport){
+
+		}		
+	}
+	*/			
+}
+

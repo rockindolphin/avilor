@@ -24,6 +24,8 @@
 	--gray_585:  #585857;
 	--gray_d8d:  #d8d8d8;
 	--gray_ded:  #dedede;
+	--gray_f4f:  #f4f4f4;
+	--gray_686:  #686868;
 	--outline-color: color( #af008a alpha(-50%) ); 
 
 	--grad-main:  linear-gradient(to right, var(--purple_af0) 0%, var(--red_ca1) 100%);
@@ -66,17 +68,17 @@
 }
 
 @font-face {
-    font-family: Rubic;
-    src: 	'../fonts/Rubic/RubicRegular.woff',
-    		'../fonts/Rubic/RubicRegular.woff2';
+    font-family: Rubik;
+    src: 	'../fonts/Rubik/RubikRegular.woff',
+    		'../fonts/Rubik/RubikRegular.woff2';
     font-style: normal;
     font-weight: var(--fw-normal);
 }
 
 @font-face {
-    font-family: Rubic;
-    src: 	'../fonts/Rubic/RubicMedium.woff',
-    		'../fonts/Rubic/RubicMedium.woff2';
+    font-family: Rubik;
+    src: 	'../fonts/Rubik/RubikMedium.woff',
+    		'../fonts/Rubik/RubikMedium.woff2';
     font-style: normal;
     font-weight: var(--fw-medium);
 }
@@ -107,7 +109,7 @@ body{
 	min-height: 100%;
 	margin:  0;
 	padding: 0;
-	font-family: Roboto;
+	font-family: Roboto, Rubik, sans-serif;
 	font-size: 16px;
 	font-weight: var(--fw-normal);
 }
@@ -118,13 +120,17 @@ img{
 
 @supports(object-fit: contain){
 	img{
-		max-width: initial;
 		object-fit: contain;
 	}
 }
 
+:--all-headers{
+	font-family: Rubik, Roboto, sans-serif;
+	font-weight: var(--fw-medium);
+}
+
 h1{
-	font-size: 32px;	
+	font-size: 36px;	
 }
 h2{
 	font-size: 28px;	

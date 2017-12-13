@@ -58,14 +58,8 @@ $(document).ready(function() {
 		var src = $(this).attr('src');
 		var parent = $(this).parent();
 		if( $(parent).is('picture') ){
+			src = $(parent).find('img').get(0).currentSrc;
 			parent =  $(parent).parent();
-			try{
-				if( Modernizr && Modernizr.webp){
-					src = src.replace(/\.(jpg|png)$/, '.webp'); 						
-				}
-			}catch(err){
-				console.log(err);
-			}
 		}
 		$(parent).css({
 			'background-image': `url(${src})`

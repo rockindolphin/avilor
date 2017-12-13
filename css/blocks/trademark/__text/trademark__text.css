@@ -1,0 +1,11 @@
+
+.trademark__text{
+	text-align: center;
+	color: var(--gray_686);	
+	& p{
+		max-width: 540px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+

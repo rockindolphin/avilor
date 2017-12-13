@@ -1,0 +1,9 @@
+
+.category__title{
+	align-self: flex-end;
+	font-size: 18px;
+	text-align: right;
+	word-break: normal;
+	width: 100%;
+}
+

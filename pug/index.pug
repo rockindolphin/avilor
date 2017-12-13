@@ -17,13 +17,13 @@ html(lang="ru")
 			include partials/header.pug
 			main.main.page__main
 				section.section--wide.section--half-rounded.section--slider-front
-					//-img.img--section-bg(src="../images/bg-waves.jpg", alt="", data-bg="true")
+					//-+picture({src:'slide-1.jpg', alt: 'slide-1', class:'img--section-bg', quality: 100, data:{'data-bg':'true'}})
 					.section__content
 						.slider.slider--front-pics
 							.swiper-container
 								.swiper-wrapper
 									.swiper-slide 
-										+picture({src:'slide-1.jpg', alt: 'slide-1', class:'slider__img', data:{'data-bg':'true'}})
+										img.slider__img(src="../images/slide-1.jpg", alt="slide-1", data-bg="true")
 									.swiper-slide 
 										img.slider__img(src="../images/slide-2.jpg", alt="slide-2", data-bg="true")
 									.swiper-slide 
@@ -57,12 +57,51 @@ html(lang="ru")
 							.swiper-button-prev
 							.swiper-button-next
 				.wrapper.page__wrapper
+					h1.text--center
+						| Наши продукты
+					.text--center
+						.category__wrapper
+							a.link.category(href="#")
+								.category__title
+									| Леденцы
+								.category__pic
+									img.img(src="../images/cat-1.png", alt="" data-bg="true")
+							a.link.category(href="#")
+								.category__title
+									| Жвачка
+								.category__pic
+									img.img(src="../images/cat-2.png", alt="" data-bg="true")
+							a.link.category(href="#")
+								.category__title
+									| Батончики
+								.category__pic
+									img.img(src="../images/cat-3.png", alt="" data-bg="true")
+							a.link.category(href="#")
+								.category__title
+									| СТ
+								.category__pic
+									img.img(src="../images/cat-4.png", alt="" data-bg="true")
+						.trademark__text
+							p
+								| Ассортимент продукции компании Авилор обширен и достаточен для удовлетворения потребностей любой категории потребителей
+						.trademark__wrapper
+							.trademark
+								.trademark__pic
+									img.img(src="../images/tm-1.png", alt="", data-bg="false")
+							.trademark
+								.trademark__pic
+									img.img(src="../images/tm-2.png", alt="", data-bg="false")
+							.trademark
+								.trademark__pic
+									img.img(src="../images/tm-3.png", alt="", data-bg="false")
+							.trademark
+								.trademark__pic
+									img.img(src="../images/tm-4.png", alt="", data-bg="false")
 					p
-						|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quaerat sapiente atque, et ad, obcaecati! Cum obcaecati dicta voluptas asperiores, blanditiis possimus molestias, aperiam minima ex labore fuga rerum rem.
+						|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quaerat sapiente atque, et ad, obcaecati! Cum obcaecati dicta voluptas asperiores, blanditiis possimus molestias, aperiam minima ex labore fuga rerum rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 				//-include partials/test.pug
 				//-include partials/chosen.pug
 			include partials/footer.pug
-		script(src="../js/vendors/modernizr-custom.js")
 		script(src="../js/vendors/stickyfill.min.js")
 		script(src="../js/vendors/jquery-3.2.1.min.js")
 		script(src="../js/vendors/chosen.jquery.min.js")

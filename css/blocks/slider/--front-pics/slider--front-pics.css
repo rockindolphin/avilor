@@ -4,6 +4,13 @@
 	height: 100%;
 	border-radius: var(--menu-rad) 0 var(--menu-rad) 0;
 	overflow: hidden;
+	&::before{
+		content: '';
+		display: inline-block;
+		padding-top: 31.579%;
+		width: 0;
+		float: left;
+	}
 	& .swiper-container{
 		width: 100%;
 		height: 100%;
@@ -12,9 +19,20 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		&:first-of-type{
+			border-radius: var(--menu-rad) 0 0 0;		
+		}
+		&:last-of-type{
+			border-radius: 0 0 var(--menu-rad) 0;		
+		}
 	}
 	@media (width<1540px){
 		border-radius: 0px;
+		& .swiper-slide{
+			&:matches(:first-of-type, :last-of-type){
+				border-radius: 0;		
+			}
+		}		
 	}	
 }
 

@@ -14,7 +14,10 @@ nav.header__nav{
 		}					
 	}
 	@media (--large-viewport){
-		overflow-x: initial;						
+		overflow-x: initial;
+		position: relative;						
+		top: 20px;
+		margin-top: -20px;
 		& > .wrapper{
 			margin-top: 21px;
 			display: flex;

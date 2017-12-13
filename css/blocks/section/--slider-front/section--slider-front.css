@@ -4,13 +4,7 @@
 	align-items: stretch;
 	min-height: 350px;
 	overflow:  visible;	
-	&::before{
-		content:  '';
-		display: inline-block;
-		padding-top: 36.403%;
-		width: 0px;
-		float: left;
-	}
+	margin-bottom: 50px;
 	& .section__content{
 		position: relative;
 		width: 100%;
@@ -18,15 +12,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
+	}
+	@media (--medium-viewport){
+		margin-bottom: 60px; 
 	}	
-}
+	@media (--large-viewport){
 
-@-moz-document url-prefix() {
-	.section--slider-front{
-		display: block;
-		height: 100%;
-	}
-	.section--slider-front .section__content{
-		height: 100%;
-	}
+	}		
 }
