@@ -1,0 +1,12 @@
+
+.btn--grad{
+	background: var(--grad-main);
+	color: var(--white);
+	font-size: 16px;
+	padding-left: 38px;
+	padding-right: 38px;
+	min-height: 34px;
+	border-radius: 28px 0 28px 0;
+	margin-bottom: 0.5em;
+}
+

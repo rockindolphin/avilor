@@ -1,0 +1,9 @@
+
+.section--partners{
+	background-color: var(--white);
+	padding-top: 50px;
+	padding-bottom: 20px;	
+	@supports(display: grid){
+		padding-bottom: 50px;
+	}	
+}

@@ -10,11 +10,6 @@
 	& .logo__text{
 		color: var(--gray_565);
 	}
-	& .icon--logo{
-		margin-right: 6px;
-		position: relative;
-		z-index: -1;
-	}
 	& .logo__text{
 		padding-top: 10px;
 		padding-bottom: 4px;
@@ -35,19 +30,36 @@
 		align-items: center;
 		justify-content: flex-start;
 	}
+	& .logo__pic{
+		width: 48px;
+		background-image: url('../images/logo.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-right: 6px;
+		&::before{
+			content: '';
+			display: block;
+			padding-bottom: 72.29%;
+		}
+	}	
 	@media (--medium-viewport){
 		& .logo__text{
 			padding-top: 3px;
 			padding-bottom: 2px;
-		}			
-		& .icon--logo{
-			margin-right: 18px;
-		}			
+		}						
 		& .logo__text--subtitle{
 			display: block;
-		}					
+		}
+		& .logo__pic{
+			width: 62px;
+			margin-right: 18px;
+		}								
 	}	
 	@media (--large-viewport){
+		& .logo__pic{
+			width: 83px;
+		}		
 		& .logo__text--title{
 	
 		}			

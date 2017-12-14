@@ -1,6 +1,6 @@
 
-.trademark__pic{
-	max-width: 140px;
+.partner__pic{
+	max-width: 200px;
 	@media (--medium-viewport){
 		
 	}	
@@ -8,14 +8,13 @@
  
 	}
 	@supports(display: grid){
-		margin-left: initial;
-		margin-right: initial;
+
 		@media (--medium-viewport){
 
 		}	
 		@media (--large-viewport){
 
 		}		
-	}		
+	}
 }
 

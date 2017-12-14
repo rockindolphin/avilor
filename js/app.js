@@ -2,10 +2,6 @@ $(document).ready(function() {
 	
 	//внешние svg в ie11
 	svg4everybody();
-	
-	// position: sticky; polifill
-	var stickyElements = document.querySelectorAll('.stickyfill');
-	Stickyfill.add(stickyElements);
 
 	//ширина скроллбара
 	var scrollMeasure = $('<div>').addClass('scroll__measure').get(0);

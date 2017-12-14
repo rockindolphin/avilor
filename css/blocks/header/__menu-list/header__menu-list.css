@@ -156,7 +156,7 @@
 			margin-right: -50px;
 			border-top-left-radius: var(--menu-rad);
 			border-bottom-right-radius: var(--menu-rad);
-			box-shadow: 0 1px 1px 0 color(#000000 alpha(10%));			
+			box-shadow: 0 1px 1px 0 color(#3b020a alpha(10%));			
 			& .list__item{
 				&:matches(:hover,:focus){
 					& > .nav__item:not(.ssi_class){
