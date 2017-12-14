@@ -1,0 +1,32 @@
+
+.section--fabrication{
+	background: var(--purple_af0);
+	color: var(--white);
+	font-size: 14px;
+	font-family: Rubik, Roboto, sans-serif;
+	padding-top: 80px;
+	padding-bottom: 30px;
+	margin-bottom: 60px;
+	& > .wrapper{
+		& > :--all-headers{
+			max-width: 550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		& > p{
+			max-width: 660px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 40px;
+		}		
+	}
+	@media (--medium-viewport){
+		font-size: 18px;
+		margin-bottom: 90px;
+	}
+	@media (--large-viewport){
+		font-size: 22px;
+		margin-bottom: 80px;
+	}	
+}
+

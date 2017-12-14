@@ -1,0 +1,30 @@
+
+.text--rubric{
+	font-family: Circe, Rubic, sans-serif;
+	font-weight: var(--fw-bold);
+	text-transform: uppercase;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	&:matches(::before,::after){
+		content: '';
+		display: block;
+		height: 12px;
+		width: 100%;
+		max-width: 100px;
+		background-color: var(--purple_af0);
+		border-radius: 12px 0 12px 0;
+		vertical-align: middle;
+		flex-shrink: 10000;
+	}
+	&::before{
+		margin-right: 14px;
+	}
+	&::after{
+		margin-left: 14px;
+	}
+}
+

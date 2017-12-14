@@ -1,0 +1,25 @@
+
+.partner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	@media (--medium-viewport){
+		width: 50%;
+	}	
+	@media (--large-viewport){
+		width: 25%;
+	}
+	@supports(display: grid){
+		margin-bottom: initial;
+		justify-self: center;
+		@media (width>375px){
+			width: initial;		
+		}	
+		@media (width>775px){
+			width: initial;		
+		}		
+	}
+}
+

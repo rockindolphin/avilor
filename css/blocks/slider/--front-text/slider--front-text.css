@@ -20,7 +20,7 @@
 		left: var(--page-gap);
 		right: var(--page-gap);
 		height: 50%;
-		box-shadow: 0 8px 24px 0 color(#000000 alpha(15%));
+		box-shadow: 0 8px 24px 0 color(#3b020a alpha(15%));
 	}
 	& :--all-headers{
 		font-family: Roboto, Rubik, sans-serif;
@@ -31,7 +31,7 @@
 	}
 	& .swiper-container{
 		border-radius: calc(2*var(--input-rad));
-		background: linear-gradient(to bottom, var(--white) 0%, var(--yellow_fdf) 100%);		
+		background-color: var(--white);		
 	}
 	& .swiper-slide{
 		padding-left: 50px;

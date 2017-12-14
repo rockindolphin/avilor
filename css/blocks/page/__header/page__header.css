@@ -4,7 +4,6 @@
 	top: 0;
 	z-index: 5;
 	width: 100%;
-	background-color: var(--white);
 	padding-top: 15px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid;
@@ -30,7 +29,6 @@
 	}
 	@media (--large-viewport){
 		padding-bottom: 0px;	
-		background-color: var(--yellow_fdf);
 		border:  none;
 		& .icon--logo{
 			width: 83px;

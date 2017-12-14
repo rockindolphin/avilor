@@ -104,7 +104,6 @@
 
 html,
 body{
-	background-color: var(--yellow_fdf);
 	width: 100%;
 	min-height: 100%;
 	margin:  0;
@@ -130,7 +129,13 @@ img{
 }
 
 h1{
-	font-size: 36px;	
+	font-size: 24px;	
+	@media (--medium-viewport){
+		font-size: 32px;
+	}
+	@media (--large-viewport){
+		font-size: 36px;
+	}
 }
 h2{
 	font-size: 28px;	

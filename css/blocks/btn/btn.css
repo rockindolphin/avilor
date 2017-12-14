@@ -2,6 +2,7 @@
 .btn{
 	min-width: var(--btn-min-side);
 	min-height: var(--btn-min-side);
+	text-align: center;
 	&:matches(:focus, .btn--focus){
 		outline: none;
 		box-shadow: 0 0 0 2px var(--outline-color) inset;
@@ -11,3 +12,12 @@
 	}
 }
 
+a.btn{
+	text-decoration: none;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 6px; 
+	padding-bottom: 6px; 
+}

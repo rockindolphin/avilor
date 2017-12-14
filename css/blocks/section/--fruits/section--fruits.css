@@ -1,0 +1,29 @@
+
+.section--fruits{
+	position: relative;
+	z-index: 1;
+	&::before{
+		content: '';
+		display: none;
+		position: absolute;
+		z-index: -1;
+		top: 70%;
+		left: 45%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 100vw;
+		height: 100vh;
+		background-image: url('../images/fruits.png');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	@media (--medium-viewport){
+		&::before{
+			display: block;
+		}
+	}
+	@media (--large-viewport){
+		
+	}	
+}
+
