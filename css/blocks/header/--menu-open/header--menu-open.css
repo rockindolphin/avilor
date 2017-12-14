@@ -1,6 +1,9 @@
 
 .header--menu-open{
 	height: 100vh;
+	& nav.header__nav{
+		margin-top: 20px;
+	}	
 	& .header__menu{
 		display: block;
 	}	
@@ -13,6 +16,7 @@
 	@media (--medium-viewport){
 		height: initial;
 		& nav.header__nav{
+			margin-top: initial;
 			background: color(#000000 alpha(65%));
 			position: fixed;
 			top: 0;
@@ -24,9 +28,10 @@
 	}	
 	@media (--large-viewport){
 		& nav.header__nav{
+			margin-top: -20px;
 			background: initial;
-			position: initial;
-			top: initial;
+			position: relative;
+			top: 20px;
 			left: initial;
 			width: initial;
 			height: initial;

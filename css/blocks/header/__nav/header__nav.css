@@ -19,7 +19,7 @@ nav.header__nav{
 		top: 20px;
 		margin-top: -20px;
 		& > .wrapper{
-			margin-top: 21px;
+			margin-top: 20px;
 			display: flex;
 			flex-direction: row;
 			align-items: stretch;
