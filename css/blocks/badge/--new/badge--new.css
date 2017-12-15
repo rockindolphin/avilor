@@ -1,0 +1,22 @@
+
+.badge--new{
+	color: var(--white);
+	&::before{
+		background: linear-gradient(to right, var(--red_c11) 0%,var(--red_da0) 100%);
+	}
+	&::after{
+		content: '';
+		display: block;
+		width: 90%;
+		position: absolute;
+		z-index: 0;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		border-radius: 50%;
+		padding-top: 90%;
+		border: 1px dashed;
+		border-color: var(--white);
+	}	
+}
+

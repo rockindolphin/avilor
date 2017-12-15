@@ -1,0 +1,22 @@
+
+.input--radio{
+	&.input{
+		display: none;
+		&:checked{
+			& + .input__label{
+				background: var(--grad-main);
+				color: var(--white);
+			}
+		}
+	}
+	& + .input__label{
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		min-height: 32px;
+		cursor: pointer;
+		border-radius: 20px 0 20px 0;
+	}
+}
+

@@ -1,0 +1,126 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	head
+		title Avilor
+		link(rel="stylesheet", href="../css/style.css")
+		link(rel="shortcut icon", type="image/png", href="../images/favicon.png")
+		meta(charset='utf-8')
+		meta(name="viewport", content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		if config.images.generateSpritePng
+			link(rel="stylesheet", href="../css/sprite.css")
+		script(src="../js/vendors/svg4everybody.min.js")
+	body.page
+		.page__body
+			include partials/header.pug
+			main.main.page__main
+				.wrapper.page__wrapper
+					.text--right
+						.input__wrapper.input__wrapper--radio
+							input.input.input--radio(type="radio", name="type", value="all" id="all", checked="true")
+							label.input__label(for="all")
+								| Все
+							input.input.input--radio(type="radio", name="type", value="bad" id="bad")
+							label.input__label(for="bad")
+								| БАД
+					h3
+						| Батончики мюсли в йогурте «Tekmar»
+					p.text--compact
+						| Витаминно-минеральный состав включает в себя: витамины А, В1, В5, В6, С, D, Н и РР, а также калий, кальций, магний, медь и марганец, железо, фосфор и натрий.
+					br
+					br
+					br
+					br
+					.product__wrapper
+						.product
+							.product__pic
+								img.img(src="../images/product-1.png", alt="")
+							.product__title
+								| Абрикосовый батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-2.png", alt="")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-3.png", alt="")
+								.product__badges
+									.product__badge.badge--new
+										| new
+									.product__badge.badge--bad
+										| бад
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-4.png", alt="")
+							.product__title
+								| Абрикосовый батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-5.png", alt="")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-6.png", alt="")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+					h3
+						| Леденцовая карамель «Виталор» с витамином С, БАД
+					p.text--compact
+						| Карамель Vitalor изготовлена по старинным австрийским рецептам. Благотворно влияет на верхние дыхательные пути. Облепиха содержит комплекс веществ, оказывающих выраженное бактерицидное и противовоспалительное действие. Натуральный мёд успокаивает горло. Ментол подавляет приступы кашля благодаря охлаждающему эффекту.
+					br
+					br
+					br
+					br
+					.product__wrapper
+						.product
+							.product__pic
+								img.img(src="../images/product-7.png", alt="")
+							.product__title
+								| Леденцовая карамель с витамином С со вкусом ЖЕНЬШЕНЯ
+						.product
+							.product__pic
+								img.img(src="../images/product-8.png", alt="")
+							.product__title
+								| Леденцовая карамель с витамином С со вкусом ЭВКАЛИПТА С МЕНТОЛОМ
+						.product
+							.product__pic
+								img.img(src="../images/product-9.png", alt="")
+							.product__title
+								| Леденцовая карамель с витамином С со вкусом АНИСА	
+					h3
+						| Леденцовая карамель «Виталор» с витамином С, БАД
+					p.text--compact
+						| Карамель Vitalor изготовлена по старинным австрийским рецептам. Благотворно влияет на верхние дыхательные пути. Облепиха содержит комплекс веществ, оказывающих выраженное бактерицидное и противовоспалительное действие. Натуральный мёд успокаивает горло. Ментол подавляет приступы кашля благодаря охлаждающему эффекту.
+					br
+					br
+					br
+					br
+					.product__wrapper
+						.product
+							.product__pic
+								img.img(src="../images/product-7.png", alt="")
+							.product__title
+								| Леденцовая карамель с витамином С со вкусом ЖЕНЬШЕНЯ
+						.product
+							.product__pic
+								img.img(src="../images/product-8.png", alt="")
+							.product__title
+								| Леденцовая карамель с витамином С со вкусом ЭВКАЛИПТА С МЕНТОЛОМ
+						.product
+							.product__pic
+								img.img(src="../images/product-9.png", alt="")
+							.product__title
+								| Леденцовая карамель с витамином С со вкусом АНИСА														
+				//-include partials/test.pug
+				//-include partials/chosen.pug
+			include partials/footer.pug
+		script(src="../js/vendors/jquery-3.2.1.min.js")
+		script(src="../js/vendors/chosen.jquery.min.js")
+		script(src="../js/vendors/swiper.min.js")
+		script(src="../js/app.js")

@@ -2,5 +2,11 @@
 .page__main{
 	width: 100%;
 	flex-grow: 1;
+	padding-top: 45px;
+	&>.section{
+		&:first-child{
+			margin-top: -45px;
+		}
+	}
 }
 

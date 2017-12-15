@@ -1,0 +1,54 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	head
+		title Avilor
+		link(rel="stylesheet", href="../css/style.css")
+		link(rel="shortcut icon", type="image/png", href="../images/favicon.png")
+		meta(charset='utf-8')
+		meta(name="viewport", content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		if config.images.generateSpritePng
+			link(rel="stylesheet", href="../css/sprite.css")
+		script(src="../js/vendors/svg4everybody.min.js")
+	body.page
+		.page__body
+			include partials/header.pug
+			main.main.page__main
+				.wrapper.page__wrapper
+					h1.text--center.text--normal
+						| Каталог
+					p.text--compact-center
+						| Компания работает на рынке здорового питания с 1996 года. Основными направлениями деятельности фирмы являются производство и оптовая продажа полного ассортимента диетических и диабетических продуктов питания.
+					br
+					br
+					.text--center
+						.category__wrapper.category__wrapper--wide
+							a.link.category(href="#")
+								.category__title
+									| Леденцы
+								.category__pic
+									img.img(src="../images/cat-1-wide.png", alt="" data-bg="true")
+							a.link.category(href="#")
+								.category__title
+									| Жвачка
+								.category__pic
+									img.img(src="../images/cat-2-wide.png", alt="" data-bg="true")
+							a.link.category(href="#")
+								.category__title
+									| Батончики
+								.category__pic
+									img.img(src="../images/cat-3-wide.png", alt="" data-bg="true")
+							a.link.category(href="#")
+								.category__title
+									| СТ
+								.category__pic
+									img.img(src="../images/cat-4-wide.png", alt="" data-bg="true")
+				//-include partials/test.pug
+				//-include partials/chosen.pug
+			include partials/footer.pug
+		script(src="../js/vendors/jquery-3.2.1.min.js")
+		script(src="../js/vendors/chosen.jquery.min.js")
+		script(src="../js/vendors/swiper.min.js")
+		script(src="../js/app.js")

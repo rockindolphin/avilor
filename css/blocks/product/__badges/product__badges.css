@@ -1,0 +1,9 @@
+
+.product__badges{
+	display: inline-flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	bottom: 95%;
+}
+

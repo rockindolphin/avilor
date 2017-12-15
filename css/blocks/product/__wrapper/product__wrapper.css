@@ -1,0 +1,30 @@
+
+.product__wrapper{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap:  wrap;
+	width: 100%;
+	@media (--medium-viewport){
+				 	 
+	}
+	@media (--large-viewport){
+				 	 
+	}	
+	@supports(display: grid){
+		display: grid;
+		grid-template-columns:  1fr;
+		grid-template-rows: auto;
+		grid-column-gap: 20px;		
+		grid-row-gap: 80px;	
+		margin-bottom: 80px;	
+		@media (--medium-viewport){
+			grid-template-columns:  repeat(2, 1fr);
+		}
+		@media (--large-viewport){
+			grid-template-columns:  repeat(3, 1fr);
+		}
+	}
+}
+

@@ -1,0 +1,8 @@
+
+.badge--bad{
+	color: var(--white);
+	&::before{
+		background-color: var(--green_67a);
+	}
+}
+
