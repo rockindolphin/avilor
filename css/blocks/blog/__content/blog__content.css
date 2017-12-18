@@ -1,7 +1,7 @@
 
-.text--compact{
+.blog__content{
 	@media (--medium-viewport){
-		max-width: 70%;
+		margin-right: var(--page-gap);
 	}
 	@media (--large-viewport){
 		

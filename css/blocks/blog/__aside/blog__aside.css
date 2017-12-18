@@ -1,7 +1,9 @@
 
-.text--compact{
+.blog__aside{
+	flex-shrink: 0;
+	display: none;
 	@media (--medium-viewport){
-		max-width: 70%;
+		display: initial;
 	}
 	@media (--large-viewport){
 		
