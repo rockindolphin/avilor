@@ -1,7 +1,7 @@
 
-.blog__content{
+.blog--with-aside{
 	@media (--medium-viewport){
-		margin-right: var(--page-gap);
+		padding-right: 300px;
 	}
 	@media (--large-viewport){
 		

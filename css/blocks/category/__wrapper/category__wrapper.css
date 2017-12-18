@@ -10,7 +10,16 @@
 	width: 100%;
 	margin-bottom: 40px;	
 	@media (width>590px){
-		max-width: 540px;		 
+		max-width: 540px;
+		& .category{
+			&:hover{
+				bottom: 10px;
+				box-shadow:  0 12px 36px 0 color(#3b020a alpha(25%));
+				& .category__title{
+					color: var(--red_ca1);
+				}
+			}
+		}		 
 	}	
 	@media (width>1160px){
 		max-width: 1110px;		 	 
@@ -20,6 +29,9 @@
 		grid-template-columns:  1fr;
 		grid-template-rows:  auto;
 		grid-gap: 8px;
+		& .category{
+			margin: initial; 
+		}		
 		@media (width>590px){
 			grid-template-columns:  repeat(2, 1fr);
 			grid-gap: 30px; 

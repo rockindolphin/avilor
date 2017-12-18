@@ -1,0 +1,32 @@
+
+.gallery__item{
+	margin-bottom: 1em;
+	width: 100%;
+	max-width: 160px;
+	&:not(:last-of-type){
+		margin-right: 30px;
+	}
+	& .item__pic{
+		display: block;
+		margin-bottom: 0.5em;
+	}
+	@media (--medium-viewport){
+		 
+	}	
+	@media (--large-viewport){
+	 	 
+	}
+	@supports(display: grid){
+		margin: initial;
+		&:not(:last-of-type){
+			margin-right: initial;
+		}		
+		@media (--medium-viewport){
+			 
+		}	
+		@media (--large-viewport){
+		 	 
+		}		
+	}	
+}
+

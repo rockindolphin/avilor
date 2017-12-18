@@ -1,0 +1,14 @@
+
+.aside__item{
+	float: right;
+	width: 250px;
+	margin-right: -300px;
+	display: none;
+	@media (--medium-viewport){
+		display: initial;	
+	}
+	@media (--large-viewport){
+		
+	}		
+}
+

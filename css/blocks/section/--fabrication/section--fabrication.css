@@ -7,6 +7,7 @@
 	padding-top: 80px;
 	padding-bottom: 30px;
 	margin-bottom: 60px;
+	background-image: url('../images/bg-waves.jpg');
 	& > .wrapper{
 		& > :--all-headers{
 			max-width: 550px;

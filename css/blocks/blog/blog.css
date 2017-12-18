@@ -1,9 +1,15 @@
 
 .blog{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: flex-start;
+	& :--all-headers{
+		font-family: Roboto, Rubik, sans-serif;
+		font-weight: var(--fw-bold);
+		color: var(--gray_3a3);
+	}
+	@media (--medium-viewport){
+		
+	}
+	@media (--large-viewport){
+		
+	}		
 }
 

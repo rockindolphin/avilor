@@ -25,6 +25,7 @@
 	--gray_d8d:  #d8d8d8;
 	--gray_ded:  #dedede;
 	--gray_f4f:  #f4f4f4;
+	--gray_3a3:  #3a3937;
 	--gray_686:  #686868;
 	--green_67a:  #67a23a;
 	--outline-color: color( #af008a alpha(-50%) ); 
@@ -48,6 +49,7 @@
 @custom-media --large-viewport (width > 1023px);
 
 @custom-selector :--all-headers h1, h2, h3, h4, h5, h6;
+@custom-selector :--table-cell td, th;
 
 /* FONTS */
 
@@ -100,6 +102,9 @@
 	word-break: break-word;
 	&:matches(:active,:focus){
 		outline-color: var(--purple_af0);
+	}
+	&:visited{
+		color: var(--purple_af0);
 	}
 }
 

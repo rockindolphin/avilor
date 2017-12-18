@@ -1,0 +1,11 @@
+
+.blog__item--wide{
+	@media (--medium-viewport){
+		margin-right: -300px;
+		max-width: initial;
+	}
+	@media (--large-viewport){
+		
+	}
+}
+
