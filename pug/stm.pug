@@ -1,0 +1,106 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	head
+		title Avilor
+		link(rel="stylesheet", href="../css/style.css")
+		link(rel="shortcut icon", type="image/png", href="../images/favicon.png")
+		meta(charset='utf-8')
+		meta(name="viewport", content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		if config.images.generateSpritePng
+			link(rel="stylesheet", href="../css/sprite.css")
+		script(src="../js/vendors/svg4everybody.min.js")
+	body.page
+		.page__body
+			include partials/header.pug
+			main.main.page__main
+				.wrapper.page__wrapper
+					h3.text--center.text--normal
+						| СТМ
+					h3
+						| Аптечная сеть «Ригла»
+					.text--compact
+						| Ригла — национальная аптечная сеть, вторая по объёму продаж в России в и крупнейшая сеть по продажам лекарственных препаратов. Это команда профессионалов, передовые технологии аптечного бизнеса, широкий ассортимент и только качественные товары.
+					br
+					br
+					br
+					br
+					.product__wrapper
+						.product
+							.product__pic
+								img.img(src="../images/product-10.png", alt="" data-bg="false")
+							.product__title
+								| Жевательная резинка «Азбука Здоровья» 
+						.product
+							.product__pic
+								img.img(src="../images/product-11.png", alt="" data-bg="false")
+							.product__title
+								| Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»
+						.product
+							.product__pic
+								img.img(src="../images/product-12.png", alt="" data-bg="false")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-10.png", alt="" data-bg="false")
+							.product__title
+								| Жевательная резинка «Азбука Здоровья» 
+						.product
+							.product__pic
+								img.img(src="../images/product-11.png", alt="" data-bg="false")
+							.product__title
+								| Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»
+						.product
+							.product__pic
+								img.img(src="../images/product-12.png", alt="" data-bg="false")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+					h3
+						| Сеть аптек «Доктор Столетов»
+					p.text--compact
+						| Аптеки с широким ассортиментом не только лекарственных средств, но и товаров для здоровья, лечебной косметики, диетических и диабетических продуктов, биологически активных добавок, витаминов и спортивного питания. 
+					br
+					br
+					br
+					br
+					.product__wrapper
+						.product
+							.product__pic
+								img.img(src="../images/product-10.png", alt="" data-bg="false")
+							.product__title
+								| Жевательная резинка «Азбука Здоровья» 
+						.product
+							.product__pic
+								img.img(src="../images/product-11.png", alt="" data-bg="false")
+							.product__title
+								| Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»
+						.product
+							.product__pic
+								img.img(src="../images/product-12.png", alt="" data-bg="false")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+						.product
+							.product__pic
+								img.img(src="../images/product-10.png", alt="" data-bg="false")
+							.product__title
+								| Жевательная резинка «Азбука Здоровья» 
+						.product
+							.product__pic
+								img.img(src="../images/product-11.png", alt="" data-bg="false")
+							.product__title
+								| Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»
+						.product
+							.product__pic
+								img.img(src="../images/product-12.png", alt="" data-bg="false")
+							.product__title
+								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+				//-include partials/test.pug
+				//-include partials/chosen.pug
+			include partials/footer.pug
+		script(src="../js/vendors/jquery-3.2.1.min.js")
+		script(src="../js/vendors/chosen.jquery.min.js")
+		script(src="../js/vendors/swiper.min.js")
+		script(src="../js/app.js")

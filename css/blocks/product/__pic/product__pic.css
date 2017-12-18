@@ -4,6 +4,48 @@
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&::before{
+		content:  '';
+		display: inline-block;
+		padding-bottom: 50%;
+		float: left;
+		width: 0;
+	}	 	 
+	@media (--medium-viewport){
+
+	}
+	@media (--large-viewport){
+				 	 
+	}	
 }
 
+@-moz-document url-prefix() {
+	.product__pic{ 
+		display: block;
+	}
+}
+
+@media \0screen\,screen\9 {
+	.product__pic{
+		height: 100%;
+	}
+	.product__pic>.img{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:0\0) {
+	.product__pic{
+		height: 100%;
+	}
+	.product__pic>.img{
+		width: 100%;
+	}
+}
