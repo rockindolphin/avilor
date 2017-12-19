@@ -34,17 +34,17 @@ html(lang="ru")
 					br
 					br
 					.product__wrapper
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-1.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Абрикосовый батончик мюсли в йогуртовой глазури
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-2.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-3.png", alt="" data-bg="false")
 								.product__badges
@@ -52,22 +52,22 @@ html(lang="ru")
 										| new
 									.product__badge.badge--bad
 										| бад
-							.product__title
+							.product__excerpt
 								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-4.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Абрикосовый батончик мюсли в йогуртовой глазури
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-5.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-6.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Малиново-брусничный, батончик мюсли в йогуртовой глазури
 					h3
 						| Леденцовая карамель «Виталор» с витамином С, БАД
@@ -78,20 +78,20 @@ html(lang="ru")
 					br
 					br
 					.product__wrapper
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-7.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Леденцовая карамель с витамином С со вкусом ЖЕНЬШЕНЯ
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-8.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Леденцовая карамель с витамином С со вкусом ЭВКАЛИПТА С МЕНТОЛОМ
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-9.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Леденцовая карамель с витамином С со вкусом АНИСА	
 					h3
 						| Леденцовая карамель «Виталор» с витамином С, БАД
@@ -102,21 +102,58 @@ html(lang="ru")
 					br
 					br
 					.product__wrapper
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-7.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Леденцовая карамель с витамином С со вкусом ЖЕНЬШЕНЯ
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-8.png", alt="" data-bg="false")
-							.product__title
+							.product__excerpt
 								| Леденцовая карамель с витамином С со вкусом ЭВКАЛИПТА С МЕНТОЛОМ
-						.product
+						a.link.product(href="#", data-modal="product")
 							.product__pic
 								img.img(src="../images/product-9.png", alt="" data-bg="false")
-							.product__title
-								| Леденцовая карамель с витамином С со вкусом АНИСА														
-				//-include partials/test.pug
-				//-include partials/chosen.pug
+							.product__excerpt
+								| Леденцовая карамель с витамином С со вкусом АНИСА	
+				.modal.product__modal
+					.wrapper.page__wrapper
+						.text--right
+							button.btn.btn--clr.product__btn
+								svg.icon.icon--active.icon--close
+									use(xlink:href="../images/sprite.svg#close")
+						.product.product--open
+							.text--center
+								h4.product__title
+									| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+								.product__barcode
+									| Штрих-код: 8585004500203
+							.product__pic
+								img.img(src="../images/product-2-single.png", alt="" data-bg="false")
+							.product__excerpt
+								b
+									| Состав:
+								p
+									| йогуртовая глазурь (сахар, масло растительное, йогурт сухой, сухая молочная сыворотка, молоко сухое обезжиренное, лецитин, натуральный ароматизатор йогурта, лимонная кислота), абрикосовое пюре, вытяжки зерновых культур (кукуруза, пшеница, рис), сахар, курага, мед, йогуртовый порошок, растительный жир, сироп глюкозы, овсяные и пшеничные хлопья, мальтодекстрин.
+								b
+									| Пищевая ценность на 100 г:
+								p
+									| белки – 5,4 г; жиры – 19,5 г; углеводы – 67;
+								b
+									| Энергетическая ценность на 100 г:
+								p
+									| 340 ккал (1445 кДж/калл)
+								b
+									| Упаковка:
+								p
+									| Шоубокс – 32шт, 0,96 кг
+									br
+									| Гофрокороб – 192 шт, 27,84 кг
+								b
+									| Срок годности и условия хранения:
+								p
+									| 12 месяцев
+									br
+									| Хранить в сухом месте при температуре не выше 25 °С.													
 			include partials/footer.pug

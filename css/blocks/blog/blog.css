@@ -1,5 +1,6 @@
 
 .blog{
+	padding-bottom: 60px;
 	& :--all-headers{
 		font-family: Roboto, Rubik, sans-serif;
 		font-weight: var(--fw-bold);

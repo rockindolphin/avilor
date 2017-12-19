@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	
+	var productOpen = false;
+
 	//внешние svg в ie11
 	svg4everybody();
 
@@ -16,7 +18,9 @@ $(document).ready(function() {
 
 	//меню в шапке
 	$('.header__menu-btn button').click(function(){
-		$('.page__header').toggleClass('header--menu-open');
+		if( !productOpen ){
+			$('.page__header').toggleClass('header--menu-open');		
+		}
 	});
 
 	//подменю
@@ -35,6 +39,27 @@ $(document).ready(function() {
 			});
 		}		
 	});
+
+	//продукт
+	function toggleProductModal(){
+		$('.page').toggleClass('page--product-open');
+		$('.product__modal').toggleClass('modal--open');
+		$('.page__main>.page__wrapper').toggleClass('item--hidden');		
+		productOpen = !productOpen;
+	}
+
+	$('.product[data-modal="product"]').click(function(){
+		toggleProductModal();
+	});	
+	$('.header__menu-btn button').click(function(evt){
+		if( productOpen ){
+			toggleProductModal();
+			evt.preventDefault();		
+		}
+	});	
+	$('.product__btn').click(function(){
+		toggleProductModal();
+	});	
 
 
 	var config = {
@@ -88,5 +113,10 @@ $(document).ready(function() {
 			} 		
 		}
 	});
+
+	//параллакс
+	if( $('.parallax__layer').length > 0 ){
+		var rellax = new Rellax('.parallax__layer');	
+	}
 
 });	

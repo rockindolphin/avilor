@@ -2,7 +2,7 @@
 .section--fruits{
 	position: relative;
 	z-index: 1;
-	&::before{
+	& > .parallax__layer{
 		content: '';
 		display: none;
 		position: absolute;
@@ -12,12 +12,20 @@
 		transform: translateY(-10%);
 		width: 100%;
 		height: 855px;
-		background-image: url('../images/fruits.png');
 		background-position: calc(50%-50px) 50%;
 		background-repeat: no-repeat;
+		&:nth-of-type(1){
+			background-image: url('../images/fruits-1.png');		
+		}
+		&:nth-of-type(2){
+			background-image: url('../images/fruits-2.png');
+		}
+		&:nth-of-type(3){
+			background-image: url('../images/fruits-3.png');
+		}
 	}
 	@media (--medium-viewport){
-		&::before{
+		& > .parallax__layer{
 			display: block;
 		}
 	}
