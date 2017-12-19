@@ -3,9 +3,11 @@
 	height: 100vh;
 	& nav.header__nav{
 		margin-top: 20px;
+		height: calc(100vh - 200px);
 	}	
 	& .header__menu{
 		display: block;
+		height: 100%;
 	}	
 	& .header__menu-btn{			
 		& .icon{

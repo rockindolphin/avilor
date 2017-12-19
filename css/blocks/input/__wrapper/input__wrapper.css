@@ -20,7 +20,7 @@
 			top:  50%;
 			left:  50%;
 			transform: translateX(-50%) translateY(-50%);
-			fill:  var(--gray_565);
+			fill:  #565655;
 		}
 		& .icon--search{
 			left: 42%;

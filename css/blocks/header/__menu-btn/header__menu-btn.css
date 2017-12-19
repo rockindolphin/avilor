@@ -10,7 +10,7 @@
 	margin-bottom: -4px;
 	& .icon{
 		opacity: 1;
-		fill: var(--red_ca1);
+		fill: #ca1533;
 		color:  transparent;
 	}			
 	& .icon--active{

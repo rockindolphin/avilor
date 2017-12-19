@@ -4,14 +4,19 @@
 	text-align: center;
 	margin-bottom: 30px;
 	& > .wrapper{
+		& > :--all-headers{
+			&:first-child{
+				margin-bottom: 5px;
+			}
+		}
 		& > p{
 			max-width: 550px;
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 40px;
+			margin-bottom: 50px;
 			&.text--rubik{
 				max-width: 750px;
-				margin-bottom: initial;
+				margin-bottom: 35px;
 			}		
 		}
 	}

@@ -8,6 +8,9 @@
 	border-bottom: 1px solid;
 	border-color: color( #000000 alpha(10%) );
 	background-color: var(--white);	
+	&.header--menu-open{
+		position: fixed;
+	}
 	& > .wrapper{
 		width: 100%;
 		display: flex;
@@ -18,6 +21,9 @@
 	@media (--medium-viewport){
 		padding-top: 20px;
 		padding-bottom: 16px;		
+		&.header--menu-open{
+			position: relative;
+		}
 		& .icon--logo{
 			width: 62px;
 			height: 44px;

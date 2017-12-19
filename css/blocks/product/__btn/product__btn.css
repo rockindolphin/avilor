@@ -1,7 +1,7 @@
 
 .product__btn{
 	& .icon{
-		fill: var(--red_ca1);
+		fill: #ca1533;
 	}
 }
 

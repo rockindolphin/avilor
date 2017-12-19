@@ -1,26 +1,17 @@
 include ./mixins.pug
 doctype html
 html(lang="ru")
-	head
-		title Avilor
-		link(rel="stylesheet", href="../css/style.css")
-		link(rel="shortcut icon", type="image/png", href="../images/favicon.png")
-		meta(charset='utf-8')
-		meta(name="viewport", content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-		meta(name="mobile-web-app-capable", content="yes")
-		meta(name="apple-mobile-web-app-capable", content="yes")
-		if config.images.generateSpritePng
-			link(rel="stylesheet", href="../css/sprite.css")
-		script(src="../js/vendors/svg4everybody.min.js")
+	include partials/head.pug
 	body.page
 		.page__body
-			include partials/header.pug
+			+header()
 			main.main.page__main
 				section.section.section--wide.section--half-rounded.section--page-title
 					img.img(src="../images/inner-bg.jpg", alt="", data-bg="true")
-					.section__content.page__wrapper
-						h1.text--normal
-							| Продукция БАД
+					.section__content
+						.page__wrapper
+							h1.text--normal
+								| Продукция БАД
 				.wrapper.page__wrapper
 					.blog.blog--with-aside
 						.aside__item 
@@ -30,11 +21,12 @@ html(lang="ru")
 								| Вся наша продукция имеет сертификацию БАД и подходит для фармацевтического рынка
 							br
 							br
-							a.link.category.category--wide(href="#")
-								.category__title
-									| Продукция БАД 
-								.category__pic
-									img.img(src="../images/cat-5-wide.png", alt="" data-bg="true")
+							.flex--iefix
+								a.link.category.category--wide(href="#")
+									.category__title
+										| Продукция БАД 
+									.category__pic
+										img.img(src="../images/cat-5-wide.png", alt="" data-bg="true")
 						h5
 							| Для обозначения второго направления разработана система экологической маркировки. За рубежом к этой группе часто относится только непищевая продукция. Но круг товаров, который можно подобным образом сертифицировать, крайне широк – от матрасов и компьютеров до железных дорог и гостиниц.
 						p
@@ -67,7 +59,3 @@ html(lang="ru")
 									div
 										| (PDF, 128 Кб)
 			include partials/footer.pug
-		script(src="../js/vendors/jquery-3.2.1.min.js")
-		script(src="../js/vendors/chosen.jquery.min.js")
-		script(src="../js/vendors/swiper.min.js")
-		script(src="../js/app.js")

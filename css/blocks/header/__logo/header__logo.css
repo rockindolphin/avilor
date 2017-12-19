@@ -22,7 +22,7 @@
 		font-size: 14px;
 	}
 	& .icon--logo-text{
-		fill: var(--gray_565);
+		fill: #565655;
 	}
 	& .link{
 		display: flex;

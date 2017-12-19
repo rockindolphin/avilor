@@ -22,9 +22,11 @@
 	}
 	&::before{
 		margin-right: 14px;
+		background: linear-gradient(to right, var(--purple_af0) 0%, var(--red_ca1) 100%);
 	}
 	&::after{
 		margin-left: 14px;
+		background: linear-gradient(to right, var(--red_ca1) 0%, var(--red_ca1) 15%, var(--yellow_edc) 100%);
 	}
 }
 

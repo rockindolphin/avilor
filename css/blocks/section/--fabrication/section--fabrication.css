@@ -5,7 +5,7 @@
 	font-size: 14px;
 	font-family: Rubik, Roboto, sans-serif;
 	padding-top: 80px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	margin-bottom: 60px;
 	background-image: url('../images/bg-waves.jpg');
 	& > .wrapper{
@@ -13,6 +13,9 @@
 			max-width: 550px;
 			margin-left: auto;
 			margin-right: auto;
+			&:first-child{
+				margin-top: 0;
+			}
 		}
 		& > p{
 			max-width: 660px;
@@ -28,6 +31,15 @@
 	@media (--large-viewport){
 		font-size: 22px;
 		margin-bottom: 80px;
-	}	
+	}
+	@supports(display: grid){
+		padding-bottom: 80px;
+		@media (--medium-viewport){
+
+		}
+		@media (--large-viewport){
+
+		}		
+	}		
 }
 

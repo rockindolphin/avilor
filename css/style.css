@@ -177,3 +177,7 @@ h5{
 h6{
 	font-size: 16px;
 }
+
+.lightbox .lb-image{
+	max-width: none;
+}
