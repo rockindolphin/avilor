@@ -24,24 +24,56 @@
 		width: 100%;
 		height: 100%;
 		background-color: color(#000000 alpha(25%));
+		border-radius: inherit;
 	}
 	& > .section__content{
+		width: 100%;
 		display: flex;
-		align-items: center;
+		align-items: stretch;
 		justify-content: center;		
 		position: relative;
 		z-index: 1;
 		text-align: center;
+		margin-left: initial;
+		margin-right: initial;
+		max-width: 100%;
+		& > .page__wrapper{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: initial;
+			margin-right: initial;
+			max-width: 100%;					
+		}	
 	}
 }
 
 @-moz-document url-prefix(){
 	.section--page-title{
-		display: block;
-		height: 100%;
-		max-height: 420px;
+		display: table;
+		width: 100%;
 	}
+	.section--page-title::before{
+		float: none;
+		display: table-cell;
+	}		
 	.section--page-title > .section__content{
-		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
 	}
+}
+
+@supports (-ms-ime-align:auto) {
+	.section--page-title{
+		display: table;
+		width: 100%;
+	}
+	.section--page-title::before{
+		float: none;
+		display: table-cell;
+	}		
+	.section--page-title > .section__content{
+		display: table-cell;
+		vertical-align: middle;
+	}	
 }

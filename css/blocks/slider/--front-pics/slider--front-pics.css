@@ -36,3 +36,13 @@
 	}	
 }
 
+@supports (-ms-ime-align:auto) {
+	.slider--front-pics{
+		position: relative;
+	}
+	.slider--front-pics .swiper-container{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

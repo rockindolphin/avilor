@@ -1,0 +1,15 @@
+
+.product__filter{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	@media (--medium-viewport){
+					
+	}
+	@media (--large-viewport){
+		justify-content: flex-end;
+	}
+}
+

@@ -1,6 +1,5 @@
 
 nav.header__nav{
-	height: 100%;
 	overflow-x: hidden;
 	& > .wrapper{
 		height:  100%;

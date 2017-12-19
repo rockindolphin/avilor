@@ -49,3 +49,9 @@
 		width: 100%;
 	}
 }
+
+@supports (-ms-ime-align:auto) {
+	.product__pic{
+		display: block;
+	}
+}
