@@ -29,12 +29,14 @@
 				color:  var(--red_ca1);
 				font-weight: var(--fw-bold);						
 				& > .btn{
-					transform: rotate(180deg);
-					transform-origin: 50% 50%;
+					& .icon{
+						transform: rotate(180deg);
+						transform-origin: 50% 50%;						
+					}
 				}
 			}	
 			& .list{
-				display: initial;
+				display: block;				
 			}
 		}			
 	}
@@ -46,7 +48,7 @@
 		align-items: stretch;
 		justify-content: space-between;
 		border-bottom: 1px solid;
-		border-color: color(#000000 alpha(10%));						
+		border-color: color(#000000 alpha(10%));								
 		& > .link{
 			padding-left: var(--page-gap);
 			padding-right: var(--page-gap);
@@ -59,6 +61,10 @@
 			justify-content: flex-start;
 		}
 		& > .btn{
+			& .icon{
+				transform: rotate(0deg);
+				transition: transform var(--anim-dur); 				
+			}
 			&:last-child{
 				margin-right: var(--page-gap);
 			}
@@ -209,4 +215,3 @@
 		}										 								 
 	}	
 }
-
