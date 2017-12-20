@@ -13,6 +13,7 @@
 		padding-right: 30px; 
 		background-color: var(--white);
 		font-weight: var(--fw-medium);
+		color: var(--gray_222);
 	}
 	@media (width>590px){
 		max-width: 255px;					 

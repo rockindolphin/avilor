@@ -4,10 +4,16 @@
 	max-width: 920px;
 	margin-left: auto;
 	margin-right: auto;
-	& :--all-headers{
+	color: var(--gray_3a3);
+	& :matches(strong, b){
 		font-family: Roboto, Rubik, sans-serif;
-		font-weight: var(--fw-bold);
-		color: var(--gray_3a3);
+		font-size: 18px;
+	}
+	& :--all-headers{
+		color: var(--gray_222);
+	}	
+	& .text--compact{
+		color: var(--gray_575);
 	}
 	@media (--medium-viewport){
 		

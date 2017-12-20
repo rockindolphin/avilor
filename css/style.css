@@ -28,6 +28,8 @@
 	--gray_f4f:  #f4f4f4;
 	--gray_3a3:  #3a3937;
 	--gray_686:  #686868;
+	--gray_222:  #222222;
+	--gray_535:  #535353;
 	--green_67a:  #67a23a;
 	--outline-color: color( #af008a alpha(-50%) ); 
 
@@ -175,7 +177,7 @@ h5{
 	font-size: 18px;
 }
 h6{
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .lightbox .lb-image{
