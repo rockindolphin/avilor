@@ -1,0 +1,282 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	include partials/head.pug
+	body.page
+		.page__body
+			+header(true)
+			main.main.page__main
+				.wrapper.page__wrapper
+					.blog.blog--wide
+						.text--center
+							br
+							h1.text--normal
+								| Жевательная резинка
+							select#group_filter.chosen-select-no-single(data-placeholder='Выберите категорию', tabindex='2')
+								option(value='0') Вся жевательная резинка
+								option(value='1') Жевательная резинка без сахара «VITAAKTIVE»
+								option(value='2') Функциональная жевательная резинка без сахара «VITAAKTIVE»															 
+						br
+						h3#no-results(style="display:none;")
+							| Нет подходящих товаров						
+						.product__group-wrapper(data-group="1")
+							h3
+								| Жевательная резинка без сахара «VITAAKTIVE»
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit cumque veritatis labore omnis minus eligendi veniam blanditiis iusto pariatur id sunt sed aliquam, laboriosam. Eaque ratione necessitatibus dolorem dolore, molestiae!
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-dikaya-vishnya.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом ДИКОЙ ВИШНИ
+									.product__barcode
+										| 4620760950528
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-klubnika.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом КЛУБНИКИ
+									.product__barcode
+										| 4620760950542
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом ЛИМОНА С МЕДОМ
+									.product__barcode
+										| 4620760950566
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом ПЕРЕЧНОЙ МЯТЫ
+									.product__barcode
+										| 4620760950580
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-sladkaya-myata.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITA AKTIVE» со вкусом СЛАДКОЙ МЯТЫ
+									.product__barcode
+										| 4620760950603
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-tropic.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом ТРОПИЧЕСКИХ ФРУКТОВ
+									.product__barcode
+										| 4620760950627
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом ЧЕРНОЙ СМОРОДИНЫ
+									.product__barcode
+										| 4620760950924
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» со вкусом АРБУЗА И ДЫНИ
+									.product__barcode
+										| 4620760950948
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+						.product__group-wrapper(data-group="2")
+							h3
+								| Функциональная жевательная резинка без сахара «VITAAKTIVE» 
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, maxime, deserunt? Enim molestiae aperiam consectetur, consequuntur id soluta aspernatur laboriosam earum eum sequi facilis consequatur voluptate deserunt quas labore minus.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Энергетическая жевательная резинка без сахара «VITAAKTIVE ENERGY» с экстрактом гуараны
+									.product__barcode
+										| 4620760950900
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-graipfruit.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» с Витамином С со вкусом грейпфрута
+									.product__barcode
+										| 4620760951006
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-perechnaya-myata.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» укрепляющая с кальцием со вкусом перечной мяты
+									.product__barcode
+										| 4620760950986
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.											
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/gums-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Жевательная резинка без сахара «VITAAKTIVE» с микрогранулами со вкусом сладкой мяты
+									.product__barcode
+										| 4620760950962
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 12шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.											
+			include partials/footer.pug

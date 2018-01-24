@@ -1,7 +1,8 @@
 
 .trademark__text{
 	text-align: center;
-	color: var(--gray_686);	
+	color: var(--gray_686);
+	margin-bottom: 80px;	
 	& p{
 		max-width: 540px;
 		margin-left: auto;

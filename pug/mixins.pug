@@ -5,7 +5,7 @@ mixin header(menu_open)
 	header.header.page__header
 		.wrapper.page__wrapper
 			.logo.header__logo
-				a.link(href="#")
+				a.link(href="index.html")
 					.logo__pic
 					.logo__text
 						.logo__text--title
@@ -39,10 +39,11 @@ mixin header(menu_open)
 					ul.list.header__menu-list
 						li.list__item
 							.nav__item
-								a.link(href="#")
+								a.link(href="about.html")
 									| О компании
-						li.list__item(class=menu_open === true ? "item--open" : "")
+						li.list__item.item--expanded(class=menu_open === true ? "item--active-trail" : "")
 							.nav__item
+								//-category.html
 								a.link(href="#")
 									| Каталог
 								button.btn.btn--clr
@@ -51,31 +52,31 @@ mixin header(menu_open)
 							ul.list
 								li.list__item
 									.nav__item
-										a.link(href="#")
+										a.link(href="lollipops.html")
 											| Леденцы
 								li.list__item
 									.nav__item
-										a.link(href="#")
+										a.link(href="gums.html")
 											| Жвачка
 								li.list__item
 									.nav__item
-										a.link(href="#")
+										a.link(href="bars.html")
 											| Батончики
 								li.list__item
 									.nav__item
-										a.link(href="#")
+										a.link(href="stm.html")
 											| СТМ
 						li.list__item
 							.nav__item
-								a.link(href="#")
+								a.link(href="inner.html")
 									| Партнеры
 						li.list__item
 							.nav__item
-								a.link(href="#")
+								a.link(href="inner.html")
 									| Оптовикам
 						li.list__item
 							.nav__item
-								a.link(href="#")
+								a.link(href="about.html")
 									| Контакты
 					.menu__wrapper
 						.info.header__info.header__nav-info
@@ -89,7 +90,7 @@ mixin header(menu_open)
 								span
 									| город Королёв, 
 								span
-									| улица Калининградская 12
+									| улица Калининградская, 12
 
 mixin picture(opts)
 	- var name = path.parse(opts.src).name

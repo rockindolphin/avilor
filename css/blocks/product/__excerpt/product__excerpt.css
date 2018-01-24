@@ -1,8 +1,7 @@
 
 .product__excerpt{
-	font-size: 14px;
+	display: none;
 	margin-bottom: auto;
-	color: var(--gray_575);
 	& :--all-headers{
 		margin-top: 1em;
 		margin-bottom: 1em;

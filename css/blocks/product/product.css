@@ -7,6 +7,11 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	margin-bottom: 80px;
+	&:not(.product--open){
+		& .product__title{
+			font-size: 14px;
+		}
+	}
 	@media (--medium-viewport){
 				 	 
 	}

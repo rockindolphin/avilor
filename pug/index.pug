@@ -6,27 +6,150 @@ html(lang="ru")
 		.page__body
 			+header()
 			main.main.page__main
+				section.section.section--wide.section--half-rounded.section--slider-front
+					.section__content
+						.slider.slider--front-pics
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide 
+										img.slider__img(src="../images/slide-1.jpg", alt="slide-1", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-2.jpg", alt="slide-2", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-3.jpg", alt="slide-3", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-4.jpg", alt="slide-4", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-5.jpg", alt="slide-5", data-bg="true")
+									.swiper-slide 
+										img.slider__img(src="../images/slide-6.jpg", alt="slide-6", data-bg="true")
+						.slider.slider--front-text
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide 
+										h5
+											| Леденцовая карамель Петушок на палочке в ассортименте 
+										p
+											| &nbsp;
+									.swiper-slide 
+										h5
+											| Леденцы для горла на основе альпийских трав
+										p
+											| Леденцы изготовленные по стариным рецептам на основе трав с ситамином «С»
+									.swiper-slide 
+										h5
+											| Блистерная карамель в ассортименте
+										p
+											| &nbsp;
+									.swiper-slide 
+										h5
+											| Жевательная резинка без сахара в ассортименте
+										p
+											| &nbsp;
+									.swiper-slide 
+										h5
+											| Батончики мюсли в ассортименте
+										p
+											| &nbsp;
+									.swiper-slide 
+										h5
+											| СТМ «Азбука эдоровья»
+										p
+											| &nbsp;
+								.swiper-pagination
+							.swiper-button-prev
+							.swiper-button-next
+				section.section.section--fruits
+					.parallax__layer(data-rellax-speed="5")
+					.parallax__layer(data-rellax-speed="2")
+					.parallax__layer(data-rellax-speed="4")
 					.wrapper.page__wrapper
-						ul.list.list--clr
-							li.list__item
-								a(href="front.html")
-									| front page  
-							li.list__item
-								a(href="catalog.html")
-									| catalog page  
-							li.list__item
-								a(href="category.html")
-									| category page  
-							li.list__item
-								a(href="stm.html")
-									| stm page  
-							li.list__item
-								a(href="inner.html")
-									| inner page  
-							li.list__item
-								a(href="about.html")
-									| about page  
-							li.list__item
-								a(href="item.html")
-									| item page 
+						h2.text--center
+							| Наши продукты
+						.text--center
+							.category__wrapper
+								a.link.category(href="lollipops.html")
+									.category__title
+										| Леденцы
+									.category__pic
+										img.img(src="../images/category-lollipops.png", alt="" data-bg="true")
+								a.link.category(href="gums.html")
+									.category__title
+										| Жвачка
+									.category__pic
+										img.img(src="../images/category-gums.png", alt="" data-bg="true")
+								a.link.category(href="bars.html")
+									.category__title
+										| Батончики
+									.category__pic
+										img.img(src="../images/category-bars.png", alt="" data-bg="true")
+								a.link.category(href="stm.html")
+									.category__title
+										| СТМ
+									.category__pic
+										img.img(src="../images/category-stm.png", alt="" data-bg="true")
+							.trademark__text
+								p
+									| Ассортимент продукции компании Авилор обширен и достаточен для удовлетворения потребностей любой категории потребителей
+							.trademark__wrapper
+								.trademark
+									.trademark__pic
+										img.img(src="../images/tm-1.png", alt="", data-bg="false")
+								.trademark
+									.trademark__pic
+										img.img(src="../images/tm-2.png", alt="", data-bg="false")
+								.trademark
+									.trademark__pic
+										img.img(src="../images/tm-3.png", alt="", data-bg="false")
+								.trademark
+									.trademark__pic
+										img.img(src="../images/tm-4.png", alt="", data-bg="false")
+				section.section.section--wide.section--rounded.section--fabrication
+					.wrapper.page__wrapper.text--center
+						h2
+							| Производство и поставка Собственных Торговых Марок
+						p
+							| Наша компания — это надежный производитель и поставщик здорового питания для продуктовых магазинов и аптек под брендами Собственных Торговых Марок.
+						.fabrication__wrapper
+							.fabrication__item
+								.item__pic
+									img.img(src="../images/fabrication-1.jpg", alt="", data-bg="true")
+									.item__icon
+										svg.icon.icon--active.icon--cart
+											use(xlink:href="../images/sprite.svg#cart")
+								.item__excerpt
+									| Производитель и поставщик продуктов для здорового и диетического питания
+							.fabrication__item
+								.item__pic
+									img.img(src="../images/fabrication-2.jpg", alt="", data-bg="true")
+									.item__icon
+										svg.icon.icon--active.icon--medicine
+											use(xlink:href="../images/sprite.svg#medicine")
+								.item__excerpt
+									| Продукция «Авилор» имеет статус биологически активной добавки с подтверждающими Свидетельствами о государственной регистрации. Эти позиции доступны для реализации через аптечные сети и специализированные магазины.
+				section.section.section--about
+					.wrapper.page__wrapper
+						h2.text--rubric.text--center
+							| «Авилор»
+						p.text--rubik
+							| Компания работает на рынке здорового питания с 2015 года. Основными направлениями деятельности фирмы являются производство и оптовая продажа широкого ассортимента продуктов здорового и диетического питания.
+						p
+							| Сегодня прайс-лист компании насчитывает множество категорий товаров с различными видами и вкусами продукции. География продаж включает практически все регионы России. За время работы ООО Авилор приобрела имидж и авторитет поставщика высококачественной продукции. Фирма имеет постоянных партнёров во многих крупных городах России.
+						a.btn.btn--clr.btn--grad(href="#")
+							| О компании
+				section.section.section--partners
+					.wrapper.page__wrapper
+						.partner__wrapper
+							.partner
+								.partner__pic
+									img.img(src="../images/partner-1.png", alt="", data-bg="false")
+							.partner
+								.partner__pic
+									img.img(src="../images/partner-2.png", alt="", data-bg="false")
+							.partner
+								.partner__pic
+									img.img(src="../images/partner-3.png", alt="", data-bg="false")
+							.partner
+								.partner__pic
+									img.img(src="../images/partner-4.png", alt="", data-bg="false")
 			include partials/footer.pug

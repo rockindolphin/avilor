@@ -1,0 +1,770 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	include partials/head.pug
+	body.page
+		.page__body
+			+header(true)
+			main.main.page__main
+				.wrapper.page__wrapper
+					.blog.blog--wide
+						.text--center
+							br
+							h1.text--normal
+								| Батончики
+							select#group_filter.chosen-select-no-single(data-placeholder='Выберите категорию', tabindex='2')
+								option(value='0') Все батончики
+								option(value='1') Батончики мюсли в йогурте «Tekmar»
+								option(value='2') Батончики мюсли БЕЗ САХАРА «Tekmar»
+								option(value='3') Батончики мюсли в йогуртовой глазури «TEKMARKY»
+								option(value='4') Батончики мюсли в молочной глазури «Tekmar»
+								option(value='5') Батончики мюсли «JUICY BAR» с желе в глазури «Tekmar»
+								option(value='6') Батончики мюсли арахисовые «Tekmar»
+								option(value='7') «EnerLine» батончики мюсли с желе начинкой «Tekmar»
+						br
+						include partials/filter.pug
+						h3#no-results(style="display:none;")
+							| Нет подходящих товаров
+						.product__group-wrapper(data-group="1")
+							h3
+								| Батончики мюсли в йогурте «Tekmar»
+							p.text--compact
+								| Витаминно-минеральный состав включает в себя: витамины А, В1, В5, В6, С, D, Н и РР, а также калий, кальций, магний, медь и марганец, железо, фосфор и натрий.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-abrikos.png", alt="" data-bg="false")
+									.product__title
+										| Абрикосовый батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500418
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-malina-i-brusnika.png", alt="" data-bg="false")
+									.product__title
+										| Малиново-брусничный, батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500203
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-yabloko-i-korica.png", alt="" data-bg="false")
+									.product__title
+										| Яблочно-коричный, батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500425
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-chernika.png", alt="" data-bg="false")
+									.product__title
+										| Черничный батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500197
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Персиковый батончик мюсли в йогуртовой глузури
+									.product__barcode
+										| 8585004500401
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Вишневый батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500449
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/bars-klubnika.png", alt="" data-bg="false")
+									//-	
+										.product__badges
+											.product__badge.badge--bad
+												| бад
+									.product__title
+										| Клубничный батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500432
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/bars-lesnaya-smes.png", alt="" data-bg="false")
+									//-	
+										.product__badges
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Лесная смесь батончик мюсли в йогуртовой глазури
+									.product__barcode
+										| 8585004500456
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+						.product__group-wrapper(data-group="2")
+							h3
+								| Батончики мюсли БЕЗ САХАРА «Tekmar»
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corrupti debitis! Excepturi harum laudantium aliquid, architecto non tempora nam ad. Eius doloribus consequatur animi ad enim, reiciendis rem natus eveniet.	
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new
+									.product__title
+										| Черная смородина в йогуртовой глазури без сахара
+									.product__barcode
+										| 8585004500333
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new										
+									.product__title
+										| Ацерола в йогуртовой глазури без сахара
+									.product__barcode
+										| 8585004500340
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Ореховый батончик мюсли без сахара
+									.product__barcode
+										| 8585004500371
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Бруснично-малиновый батончик мюсли без сахара
+									.product__barcode
+										| 8585004500395
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Абрикосовый батончик мюсли без сахара
+									.product__barcode
+										| 8585004500364
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+						.product__group-wrapper(data-group="3")
+							h3
+								| Батончики мюсли в йогуртовой глазури «TEKMARKY»
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium esse repellat quasi placeat, labore atque autem minima, sit est error sunt voluptatem nobis quas quis, molestias tempore animi ipsam.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Черника батончик "TEKMARKY" в йогуртовой глазури
+									.product__barcode
+										| 8585004501026
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Груша батончик "TEKMARKY" в йогуртовой глазури
+									.product__barcode
+										| 8585004501002
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Красное Яблоко батончик "TEKMARKY" в йогуртовой глазури
+									.product__barcode
+										| 8585004500999
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+						.product__group-wrapper(data-group="4")
+							h3
+								| Батончики мюсли в молочной глазури «Tekmar»
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium esse repellat quasi placeat, labore atque autem minima, sit est error sunt voluptatem nobis quas quis, molestias tempore animi ipsam.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="4" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли в молочной глазури
+									.product__barcode
+										| 8585004500609
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 21шт 
+											br
+											| Гофрокороб - 126шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="4" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли КАКАО в молочной глазури
+									.product__barcode
+										| 8585004500616
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 21шт 
+											br
+											| Гофрокороб - 126шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="4" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли "СкулБар" в молочной глазури с какао
+									.product__barcode
+										| 8585004501132
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 21шт 
+											br
+											| Гофрокороб - 126шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.											
+								a.link.product(href="#", data-modal="product" data-group="4" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли "СкулБар" в молочной глазури с корицей
+									.product__barcode
+										| 8585004501125
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 21шт 
+											br
+											| Гофрокороб - 126шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.											
+								a.link.product(href="#", data-modal="product" data-group="4" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--bad
+												| бад
+									.product__title
+										| Батончик мюсли "СкулБар" в молочной глазури с шоколадом
+									.product__barcode
+										| 8585004501149
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 21шт 
+											br
+											| Гофрокороб - 126шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.											
+						.product__group-wrapper(data-group="5")
+							h3
+								| Батончики мюсли «JUICY BAR» с желе в глазури «Tekmar»
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium esse repellat quasi placeat, labore atque autem minima, sit est error sunt voluptatem nobis quas quis, molestias tempore animi ipsam.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="5" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли с МАЛИНОВЫМ желе в молочной глазури
+									.product__barcode
+										| 8585004500074
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="5" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли с АПЕЛЬСИНОВЫМ желе в молочной глазури
+									.product__barcode
+										| 8585004500067
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="5" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли с желе ЛИМОН-ЛАЙМ в йогуртовой глазури
+									.product__barcode
+										| 8585004500906
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.
+						.product__group-wrapper(data-group="6")
+							h3
+								| Батончики мюсли арахисовые «Tekmar»
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium esse repellat quasi placeat, labore atque autem minima, sit est error sunt voluptatem nobis quas quis, molestias tempore animi ipsam.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="6" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли орех с БРУСНИКОЙ "NATURE LAND"
+									.product__barcode
+										| 8585004501194
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 28шт 
+											br
+											| Гофрокороб - 168шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="6" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли орех с ТЫКВИЦЕЙ "NATURE LAND"
+									.product__barcode
+										| 8585004501187
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 28шт 
+											br
+											| Гофрокороб - 168шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="6" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли орех с МЁДОМ "NATURE LAND"
+									.product__barcode
+										| 8585004501170
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 28шт 
+											br
+											| Гофрокороб - 168шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.																	
+								a.link.product(href="#", data-modal="product" data-group="6" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли "ГАРМОНИЯ" с брусникой и витаминами А,С,Е
+									.product__barcode
+										| 8585004501118
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 28шт 
+											br
+											| Гофрокороб - 168шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.																	
+								a.link.product(href="#", data-modal="product" data-group="6" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли "ВИТАЛИТИ" с миндалём и витаминами
+									.product__barcode
+										| 8585004501101
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 28шт 
+											br
+											| Гофрокороб - 168шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.
+						.product__group-wrapper(data-group="7")
+							h3
+								| «EnerLine» батончики мюсли с желе начинкой «Tekmar»
+							p.text--compact
+								|  Энергетический батончик мюсли с добавлением: L – карнитина, Таурина, Инозина, Хрома, Лецитина, Витаминов и минералов
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="7" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли с АПЕЛЬСИНОВЫМ желе в шоколадной глазури "EnerLine"
+									.product__barcode
+										| 8585004501316
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="7" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли с ВИШНЕВЫМ желе в шоколадной глазури "EnerLine"
+									.product__barcode
+										| 8585004501309
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="7" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/bars-nopic.png", alt="" data-bg="false")
+									.product__title
+										| Батончик мюсли с КЛУБНИЧНЫМ желе в йогуртовой глазури "EnerLine"
+									.product__barcode
+										| 8585004501323
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 32шт 
+											br
+											| Гофрокороб - 192шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 12 месяцев
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.
+			include partials/footer.pug

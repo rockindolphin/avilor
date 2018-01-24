@@ -1,5 +1,7 @@
 
 .product__barcode{
+	display: none;
 	font-size: 14px;
+	margin-bottom: 20px;
 }
 

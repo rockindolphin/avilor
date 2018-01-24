@@ -15,6 +15,7 @@
 		opacity: 0.75;
 		margin-bottom: 18px;
 		text-decoration: underline;
+		display: block;
 	}
 	& .info__adress{
 		line-height: 22px;

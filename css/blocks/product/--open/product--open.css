@@ -4,9 +4,25 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
+	&.product__title{
+		color: var(--black);
+	}	
+	& .product__excerpt{
+		display: block;
+		font-size: 14px;
+		color: var(--gray_575);			
+	}
+	& .product__pic{
+		&::before{
+			display: none;
+		}
+	}
+	& .product__barcode{
+		display: block;
+	}		
 	@media (--medium-viewport){
 		& .product__excerpt{
-			max-width: 80%;
+			max-width: 80%;		
 			margin-left: auto;
 			margin-right: auto;
 		}		 	 

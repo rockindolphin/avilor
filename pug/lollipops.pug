@@ -1,0 +1,604 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	include partials/head.pug
+	body.page
+		.page__body
+			+header(true)
+			main.main.page__main
+				.wrapper.page__wrapper
+					.blog.blog--wide
+						.text--center
+							br
+							h1.text--normal
+								| Леденцы
+							select#group_filter.chosen-select-no-single(data-placeholder='Выберите категорию', tabindex='2')
+								option(value='0') Все леденцы
+								option(value='1') Леденцовая карамель с витамином С массой 17 грамм в форме «Петушок» 
+								option(value='2') Леденцовая карамель «Виталор» с витамином С, БАД
+								option(value='3') Леденцовая карамель с витамином С массой 27 грамм в блистере, БАД
+						br
+						include partials/filter.pug
+						h3#no-results(style="display:none;")
+							| Нет подходящих товаров	
+						.product__group-wrapper(data-group="1")
+							h3
+								| Леденцовая карамель с витамином С массой 17 грамм в форме «Петушок» 
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt expedita nulla adipisci quibusdam veritatis quam beatae, minus omnis quisquam. Rerum quisquam, perferendis accusantium illo, autem numquam expedita maxime optio sapiente.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-klubnika.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом КЛУБНИКИ, «Петушок»
+									.product__barcode
+										| 4620760951303
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-limon-i-myata.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЛИМОНА С МЯТОЙ, «Петушок»
+									.product__barcode
+										| 4620760951310
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-malina-i-ezhevika.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом МАЛИНЫ И ЕЖЕВИКИ, «Петушок»
+									.product__barcode
+										| 4620760951327
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-vishnya.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ВИШНИ, «Петушок»
+									.product__barcode
+										| 4620760951297
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-ananas.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом АНАНАСА, «Петушок»
+									.product__barcode
+										| 4620760952263
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-chernaya-smorodina.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЧЕРНОЙ СМОРОДИНЫ, «Петушок»
+									.product__barcode
+										| 4620760952300
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-lesnaya-smes.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЛЕСНОЙ СМЕСИ, «Петушок»
+									.product__barcode
+										| 4620760952287
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-greipfruit.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ГРЕЙПФРУТА, «Петушок»
+									.product__barcode
+										| 4620760952539
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-chernika.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЧЕРНИКИ, «Петушок»
+									.product__barcode
+										| 4620760952591
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-tropic.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ТРОПИЧЕСКИХ ФРУКТОВ, «Петушок»
+									.product__barcode
+										| 4620760952577
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-karamel.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом КАРАМЕЛИ, «Петушок»
+									.product__barcode
+										| 4620760952553
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="1" data-bad="false" data-product="true")
+									.product__pic
+										img.img(src="../images/lollipops-petushki-dushes.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ДЮШЕСА, «Петушок»
+									.product__barcode
+										| 4620760951334
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 50шт
+											br
+											| Гофрокороб - 300шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.																					
+						.product__group-wrapper(data-group="2")
+							h3
+								| Леденцовая карамель «Виталор» с витамином С, БАД
+							p.text--compact
+								| Карамель Vitalor изготовлена по старинным австрийским рецептам. Благотворно влияет на верхние дыхательные пути. Облепиха содержит комплекс веществ, оказывающих выраженное бактерицидное и противовоспалительное действие. Натуральный мёд успокаивает горло. Ментол подавляет приступы кашля благодаря охлаждающему эффекту.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-alpiiski-med.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом АЛЬПИЙСКОГО МЕДА
+									.product__barcode
+										| 4620760951358
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-shalfei-s-medom.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ШАЛФЕЯ С МЕДОМ
+									.product__barcode
+										| 4620760951167
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-evkalipt-s-mentolom.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЭВКАЛИПТА С МЕНТОЛОМ
+									.product__barcode
+										| 4620760951174
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-anis.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом АНИСА
+									.product__barcode
+										| 4620760951198
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-oblepiha.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ОБЛЕПИХИ
+									.product__barcode
+										| 4620760951204
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-zhenshen.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЖЕНЬШЕНЯ
+									.product__barcode
+										| 4620760951242
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-shipovnik.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ШИПОВНИКА
+									.product__barcode
+										| 4620760951228
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-limon-s-myatoi.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЛИМОНА С МЯТОЙ
+									.product__barcode
+										| 4620760951211
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-malina-ezhevika.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом МАЛИНЫ И ЕЖЕВИКИ
+									.product__barcode
+										| 4620760951235
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+								a.link.product(href="#", data-modal="product" data-group="2" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-lipa-s-medom.png", alt="" data-bg="false")
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЛИПЫ С МЁДОМ
+									.product__barcode
+										| 4620760951181
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Гофрокороб - 20шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.									
+						.product__group-wrapper(data-group="3")
+							h3
+								| Леденцовая карамель с витамином С массой 27 грамм в блистере, БАД
+							p.text--compact
+								|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt expedita nulla adipisci quibusdam veritatis quam beatae, minus omnis quisquam. Rerum quisquam, perferendis accusantium illo, autem numquam expedita maxime optio sapiente.
+							br
+							br
+							br
+							br
+							.product__wrapper
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-blister-shalfei-s-medom.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ШАЛФЕЯ С МЕДОМ
+									.product__barcode
+										| 4620760951921
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 6шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-blister-evkalipt-s-mentolom.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЭВКАЛИПТА С МЕНТОЛОМ
+									.product__barcode
+										| 4620760951914
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 6шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-blister-limon-i-myata.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЛИМОНА С МЯТОЙ
+									.product__barcode
+										| 4620760951921
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 6шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-blister-chernaya-smorodina.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЧЕРНОЙ СМОРОДИНЫ
+									.product__barcode
+										| 4620760951945
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 6шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+								a.link.product(href="#", data-modal="product" data-group="3" data-bad="true" data-product="false")
+									.product__pic
+										img.img(src="../images/lollipops-blister-lipa-s-medom.png", alt="" data-bg="false")
+									//-
+										.product__badges
+											.product__badge.badge--new
+												| new
+											.product__badge.badge--bad
+												| бад										
+									.product__title
+										| Леденцовая карамель с витамином С со вкусом ЛИПЫ С МЕДОМ
+									.product__barcode
+										| 4620760951969
+									.product__excerpt
+										h6
+											| Упаковка:
+										p
+											| Шоубокс - 6шт
+											br
+											| Гофрокороб - 96шт
+										h6
+											| Срок годности и условия хранения:
+										p
+											| 2 года
+											br
+											| Хранить в сухом месте при температуре не выше 25 °С.										
+			include partials/footer.pug

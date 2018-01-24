@@ -22,10 +22,10 @@
 			& > .nav__item{
 										
 			}	
-		}			
-		&.item--open{ 
+		}			 
+		&.item--active-trail{ 
 			& > .nav__item{
-										
+									
 			}	
 		}			
 	}
@@ -53,7 +53,12 @@
 				& > .nav__item:not(.ssi_class){
 					opacity: 1;				
 				}
-			}						
+			}
+			&.item--active-trail{ 
+				& > .nav__item{
+					opacity: 1;					
+				}	
+			}									
 		}
 		& .nav__item{
 			font-weight: var(--fw-normal);

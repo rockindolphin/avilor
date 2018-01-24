@@ -17,14 +17,8 @@
 				background-color: var(--black);
 				color: var(--white);				
 			}
-		}
-		&.item--active{ 
-			& > .nav__item{
-				color:  var(--red_ca1);
-				font-weight: var(--fw-bold);						
-			}	
 		}			
-		&.item--open{ 
+		&.item--active-trail{
 			& > .nav__item{
 				color:  var(--red_ca1);
 				font-weight: var(--fw-bold);						
@@ -35,10 +29,14 @@
 					}
 				}
 			}	
-			& .list{
-				display: block;				
-			}
 		}			
+		&.item--expanded{
+			&.item--active-trail{
+				& .list{
+					display: block;				
+				}			
+			}
+		} 
 	}
 	& .nav__item{
 		min-height: var(--btn-min-side);		
@@ -106,24 +104,21 @@
 				& > .list{
 					display: flex;				
 				}
-			}
-			&.item--active{ 
-				& > .nav__item{
-					background-color: var(--white);
-					color: var(--black);
-					font-weight: initial;						
-				}
-			}	
-			&.item--open{ 
+			}	 
+			&.item--active-trail{ 
 				& > .nav__item{
 					background-color: var(--white);
 					color: var(--black);
 					font-weight: initial;						
 				}	
-				& .list{
-					display: flex;
-				}
 			}			
+			&.item--expanded{
+				&.item--active-trail{
+					& .list{
+						display: flex;
+					}									
+				}
+			} 
 		}
 		& .nav__item{
 			min-height: 28px;		
@@ -170,18 +165,12 @@
 						color: var(--white);				
 					}
 				}
-				&.item--active{ 
+				&.item--active-trail{ 
 					& > .nav__item{
 						background: var(--grad-main);
 						color: var(--white);					
 					}	
-				}			
-				&.item--open{ 
-					& > .nav__item{
-						background: var(--grad-main);
-						color: var(--white);					
-					}	
-				}			
+				}			 			
 			}								
 			& .nav__item{
 				& > .link{
