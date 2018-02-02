@@ -5,6 +5,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--gray_3a3);
+	font-size: 14px;
+	line-height: 1.4;
 	& :matches(strong, b){
 		font-family: Roboto, Rubik, sans-serif;
 		font-size: 18px;
@@ -15,6 +17,23 @@
 	& .text--compact{
 		color: var(--gray_575);
 	}
+	& > ul{
+		list-style: none;
+		padding-left: 16px;
+		& > li{
+			&::before{
+				content: '';
+				display: inline-block;
+				width: 6px;
+				height: 6px;
+				margin-left: -18px;
+				margin-right: 10px;
+				vertical-align: middle;
+				background-color: var(--red_c11);
+				border-radius: 50%;
+			}
+		}
+	}	
 	@media (--medium-viewport){
 		
 	}

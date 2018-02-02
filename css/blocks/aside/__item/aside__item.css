@@ -5,6 +5,7 @@
 	margin-right: -300px;
 	display: none;
 	color: var(--gray_222);
+	font-size: 16px;
 	@media (--medium-viewport){
 		display: initial;	
 	}

@@ -7,6 +7,7 @@
 	justify-content: center;
 	position: relative;
 	z-index: 1;
+	margin-bottom: 45px;
 	&::before{
 		content: '';
 		display: inline-block;
