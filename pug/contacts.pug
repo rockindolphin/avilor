@@ -1,0 +1,32 @@
+include ./mixins.pug
+doctype html
+html(lang="ru")
+	include partials/head.pug
+	body.page
+		.page__body
+			+header()
+			main.main.page__main
+				section.section.section--wide.section--half-rounded.section--page-title
+					img.img(src="../images/about-bg.jpg", alt="", data-bg="true")
+					.section__content
+						.page__wrapper
+							h1.text--normal
+								| Контакты
+				.wrapper.page__wrapper
+					.blog.blog--with-aside
+						p
+							| © ООО «Авилор»
+						p
+							| 141076, Московская обл., г. Королев, ул. Калининградская, д. 12. 
+						p
+							| Телефоны:
+						p
+							a.link(href="tel:+74959897431")
+								| +7 495 989-74-31  
+						p
+							a.link(href="tel:+74959897432")
+								| +7 495 989-74-32  
+						p
+							a.link(href="tel:+79169907941")
+								| +7 916 990-79-41
+			include partials/footer.pug
