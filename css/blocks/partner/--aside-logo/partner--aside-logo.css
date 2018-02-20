@@ -1,0 +1,14 @@
+
+.partner--aside-logo{
+	float: right;
+	max-width: 250px;
+	margin-left: 50px;
+	display: none;
+	@media (--medium-viewport){
+		display: initial;	
+	}
+	@media (--large-viewport){
+		
+	}
+}
+
