@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Avilor</title>
+		<link rel="stylesheet" href="../css/style.css?ver=151798649">
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="../css/sprite.css">
+		<script src="../js/vendors/svg4everybody.min.js"></script>
+	</head>
+	<body class="page">
+		<div class="page__body">
+			<header class="header page__header">
+				<div class="wrapper page__wrapper">
+					<div class="logo header__logo"><a class="link" href="index.html">
+							<div class="logo__pic"></div>
+							<div class="logo__text">
+								<div class="logo__text--title">
+									<svg class="icon icon--active icon--logo-text">
+										<use xlink:href="../images/sprite.svg#logo-text"></use>
+									</svg>
+								</div>
+								<div class="logo__text--subtitle">Здоровое и диетическое питание</div>
+							</div></a></div>
+					<div class="header__search">
+						<div class="input__wrapper input--rounded">
+							<input class="input" type="text" placeholder="Поиск">
+							<button class="btn btn--clr icon__wrapper">
+								<svg class="icon icon--active icon--search">
+									<use xlink:href="../images/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="info header__info"><a class="link info__phone" href="tel:+74959897431">+7 495 989-7431</a></div>
+					<div class="header__menu-btn">
+						<button class="btn btn--clr">
+							<svg class="icon icon--menu-toggle">
+								<use xlink:href="../images/sprite.svg#menu-toggle"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<div class="wrapper page__wrapper">
+						<div class="menu header__menu scroll--cutt">
+							<div class="menu__wrapper">
+								<div class="header__menu-btn">
+									<button class="btn btn--clr">
+										<svg class="icon icon--menu-toggle">
+											<use xlink:href="../images/sprite.svg#menu-toggle"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<ul class="list header__menu-list">
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="about.html">О компании</a></div>
+								</li>
+								<li class="list__item item--expanded item--active-trail">
+									<div class="nav__item"><a class="link" href="#">Каталог</a>
+										<button class="btn btn--clr">
+											<svg class="icon icon--active icon--chewron-down">
+												<use xlink:href="../images/sprite.svg#chewron-down"></use>
+											</svg>
+										</button>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="lollipops.html">Леденцы</a></div>
+										</li>
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="gums.html">Жвачка</a></div>
+										</li>
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="bars.html">Батончики</a></div>
+										</li>
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="stm.html">СТМ</a></div>
+										</li>
+									</ul>
+								</li>
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="partners.html">Партнеры</a></div>
+								</li>
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="wholesale.html">Оптовикам</a></div>
+								</li>
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="contacts.html">Контакты</a></div>
+								</li>
+							</ul>
+							<div class="menu__wrapper">
+								<div class="info header__info header__nav-info"><a class="link info__phone" href="tel:+74959897431">+7 495 989-7431</a><a class="link info__email" href="mailto:sale@avilor.ru">sale@avilor.ru</a>
+									<div class="info__adress"><span>Московская область,  </span><span>город Королёв, </span><span>улица Калининградская, 12</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main class="main page__main">
+				<div class="wrapper page__wrapper">
+					<div class="blog blog--wide">
+						<div class="text--center"><br>
+							<h1 class="text--normal">Батончики</h1>
+							<select class="chosen-select-no-single" id="group_filter" data-placeholder="Выберите категорию" tabindex="2">
+								<option value="0">Все батончики</option>
+								<option value="1">Батончики мюсли в йогурте «Tekmar»</option>
+								<option value="2">Батончики мюсли БЕЗ САХАРА «Tekmar»</option>
+								<option value="3">Батончики мюсли в йогуртовой глазури «TEKMARKY»</option>
+								<option value="4">Батончики мюсли в молочной глазури «Tekmar»</option>
+								<option value="5">Батончики мюсли «JUICY BAR» с желе в глазури «Tekmar»</option>
+								<option value="6">Батончики мюсли арахисовые «Tekmar»</option>
+								<option value="7">«EnerLine» батончики мюсли с желе начинкой «Tekmar»</option>
+							</select>
+						</div><br>
+						<div class="product__filter">
+							<form class="input__wrapper input__wrapper--radio" id="bad_filter">
+								<input class="input input--radio" type="radio" name="type" value="bad" id="bad" checked>
+								<label class="input__label" for="bad">БАД</label>
+								<input class="input input--radio" type="radio" name="type" value="all" id="all">
+								<label class="input__label" for="all">Продуктовые</label>
+							</form>
+						</div>
+						<h3 id="no-results" style="display:none;">Нет подходящих товаров</h3>
+						<div class="product__group-wrapper" data-group="1">
+							<h3 class="product__group-title">Батончики мюсли в йогурте «Tekmar»</h3>
+							<p class="text--compact">Витаминно-минеральный состав включает в себя: витамины А, В1, В5, В6, С, D, Н и РР, а также калий, кальций, магний, медь и марганец, железо, фосфор и натрий.</p><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_apricot.png" alt="" data-bg="false"></div>
+									<div class="product__title">Абрикосовый батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500418</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_cranberry.png" alt="" data-bg="false"></div>
+									<div class="product__title">Малиново-брусничный, батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500203</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_apple.png" alt="" data-bg="false"></div>
+									<div class="product__title">Яблочно-коричный, батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500425</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_blueberry.png" alt="" data-bg="false"></div>
+									<div class="product__title">Черничный батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500197</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_peach.png" alt="" data-bg="false"></div>
+									<div class="product__title">Персиковый батончик мюсли в йогуртовой глузури</div>
+									<div class="product__barcode">8585004500401</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="true" data-product="false">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_cherry.png" alt="" data-bg="false"></div>
+									<div class="product__title">Вишневый батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500449</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="true" data-product="false">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_strawberry.png" alt="" data-bg="false"></div>
+									<div class="product__title">Клубничный батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500432</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="true" data-product="false">
+									<div class="product__pic"><img class="img" src="../images/bars-yog_forest.png" alt="" data-bg="false"></div>
+									<div class="product__title">Лесная смесь батончик мюсли в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500456</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a></div>
+						</div>
+						<div class="product__group-wrapper" data-group="2">
+							<h3 class="product__group-title">Батончики мюсли БЕЗ САХАРА «Tekmar»</h3><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="2" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-nosugar_currant.png" alt="" data-bg="false"></div>
+									<div class="product__title">Черная смородина в йогуртовой глазури без сахара</div>
+									<div class="product__barcode">8585004500333</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="2" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-nosugar_acerola.png" alt="" data-bg="false"></div>
+									<div class="product__title">Ацерола в йогуртовой глазури без сахара</div>
+									<div class="product__barcode">8585004500340</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="2" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-nopic.png" alt="" data-bg="false"></div>
+									<div class="product__title">Ореховый батончик мюсли без сахара</div>
+									<div class="product__barcode">8585004500371</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="2" data-bad="true" data-product="false">
+									<div class="product__pic"><img class="img" src="../images/bars-nopic.png" alt="" data-bg="false"></div>
+									<div class="product__title">Бруснично-малиновый батончик мюсли без сахара</div>
+									<div class="product__barcode">8585004500395</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="2" data-bad="true" data-product="false">
+									<div class="product__pic"><img class="img" src="../images/bars-nopic.png" alt="" data-bg="false"></div>
+									<div class="product__title">Абрикосовый батончик мюсли без сахара</div>
+									<div class="product__barcode">8585004500364</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a></div>
+						</div>
+						<div class="product__group-wrapper" data-group="3">
+							<h3 class="product__group-title">Батончики мюсли в йогуртовой глазури «TEKMARKY»</h3><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="3" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-tekmarky_blueberry.png" alt="" data-bg="false"></div>
+									<div class="product__title">Черника батончик "TEKMARKY" в йогуртовой глазури</div>
+									<div class="product__barcode">8585004501026</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="3" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-tekmarky_pear.png" alt="" data-bg="false"></div>
+									<div class="product__title">Груша батончик "TEKMARKY" в йогуртовой глазури</div>
+									<div class="product__barcode">8585004501002</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="3" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-tekmarky_redapple.png" alt="" data-bg="false"></div>
+									<div class="product__title">Красное Яблоко батончик "TEKMARKY" в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500999</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a></div>
+						</div>
+						<div class="product__group-wrapper" data-group="4">
+							<h3 class="product__group-title">Батончики мюсли в молочной глазури «Tekmar»</h3><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="4" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-cerealna_milk.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли в молочной глазури</div>
+									<div class="product__barcode">8585004500609</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 21 шт. <br>Гофрокороб — 126 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="4" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-cerealna_cacao.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли КАКАО в молочной глазури</div>
+									<div class="product__barcode">8585004500616</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 21 шт. <br>Гофрокороб — 126 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="4" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-shool_cacao.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли "СкулБар" в молочной глазури с какао</div>
+									<div class="product__barcode">8585004501132</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 21 шт. <br>Гофрокороб — 126 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.											</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="4" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-shool_cinnamon.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли "СкулБар" в молочной глазури с корицей</div>
+									<div class="product__barcode">8585004501125</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 21 шт. <br>Гофрокороб — 126 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.											</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="4" data-bad="true" data-product="false">
+									<div class="product__pic"><img class="img" src="../images/bars-shool_chocolate.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли "СкулБар" в молочной глазури с шоколадом</div>
+									<div class="product__barcode">8585004501149</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 21 шт. <br>Гофрокороб — 126 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.											</p>
+									</div></a></div>
+						</div>
+						<div class="product__group-wrapper" data-group="5">
+							<h3 class="product__group-title">Батончики мюсли «JUICY BAR» с желе в глазури «Tekmar»</h3><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="5" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-juicy_raspberyy.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли с МАЛИНОВЫМ желе в молочной глазури</div>
+									<div class="product__barcode">8585004500074</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="5" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-juicy_orange.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли с АПЕЛЬСИНОВЫМ желе в молочной глазури</div>
+									<div class="product__barcode">8585004500067</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="5" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-juicy_lemon.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли с желе ЛИМОН-ЛАЙМ в йогуртовой глазури</div>
+									<div class="product__barcode">8585004500906</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.</p>
+									</div></a></div>
+						</div>
+						<div class="product__group-wrapper" data-group="6">
+							<h3 class="product__group-title">Батончики мюсли арахисовые «Tekmar»</h3><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="6" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-nuts_fruits.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли орех с БРУСНИКОЙ "NATURE LAND"</div>
+									<div class="product__barcode">8585004501194</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 28 шт. <br>Гофрокороб — 168 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="6" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-nuts_pumpkin.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли орех с ТЫКВИЦЕЙ "NATURE LAND"</div>
+									<div class="product__barcode">8585004501187</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 28 шт. <br>Гофрокороб — 168 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.										</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="6" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-nuts_honey.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли орех с МЁДОМ "NATURE LAND"</div>
+									<div class="product__barcode">8585004501170</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 28 шт. <br>Гофрокороб — 168 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.																	</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="6" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-harmony.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли "ГАРМОНИЯ" с брусникой и витаминами А,С,Е</div>
+									<div class="product__barcode">8585004501118</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 28 шт. <br>Гофрокороб — 168 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.																	</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="6" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-vitality.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли "ВИТАЛИТИ" с миндалём и витаминами</div>
+									<div class="product__barcode">8585004501101</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 28 шт. <br>Гофрокороб — 168 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.</p>
+									</div></a></div>
+						</div>
+						<div class="product__group-wrapper" data-group="7">
+							<h3 class="product__group-title">«EnerLine» батончики мюсли с желе начинкой «Tekmar»</h3>
+							<p class="text--compact"> Энергетический батончик мюсли с добавлением: L – карнитина, Таурина, Инозина, Хрома, Лецитина, Витаминов и минералов</p><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="7" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-ener_lemon.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли с АПЕЛЬСИНОВЫМ желе в шоколадной глазури "EnerLine"</div>
+									<div class="product__barcode">8585004501316</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="7" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-ener_cherry.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли с ВИШНЕВЫМ желе в шоколадной глазури "EnerLine"</div>
+									<div class="product__barcode">8585004501309</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.									</p>
+									</div></a><a class="link product" href="#" data-modal="product" data-group="7" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/bars-ener_straw.png" alt="" data-bg="false"></div>
+									<div class="product__title">Батончик мюсли с КЛУБНИЧНЫМ желе в йогуртовой глазури "EnerLine"</div>
+									<div class="product__barcode">8585004501323</div>
+									<div class="product__excerpt">
+										<h6>Упаковка:</h6>
+										<p>Шоубокс — 32 шт. <br>Гофрокороб — 192 шт.</p>
+										<h6>Срок годности и условия хранения:</h6>
+										<p>12 месяцев<br>Хранить в сухом месте при температуре не выше 25 °С.</p>
+									</div></a></div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer page__footer">
+				<div class="wrapper page__wrapper">
+					<div class="footer__holder">
+						<div class="logo footer__logo"><a class="link" href="index.html">
+								<svg class="icon icon--active icon--logo-full-white">
+									<use xlink:href="../images/sprite.svg#logo-full-white"></use>
+								</svg></a></div>
+						<ul class="list nav footer__menu-list">
+							<li class="list__item">
+								<div class="nav__item"><a class="link" href="inner.html">Информация</a></div>
+								<ul class="list">
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="about.html">О компании</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="#">Каталог</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="partners.html">Партнеры</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="wholesale.html">Оптовикам</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="contacts.html">Контакты</a></div>
+									</li>
+								</ul>
+							</li>
+							<li class="list__item">
+								<div class="nav__item"><a class="link" href="#">Каталог</a></div>
+								<ul class="list">
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="bars.html">Батончики</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="lollipops.html">Леденцы</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="gums.html">Жвачка</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="stm.html">СТМ</a></div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="info footer__info"><a class="link info__phone" href="tel:+74959897431">+7 495 989-7431</a>
+							<div class="info__adress"><span>улица Калининградская, 12 </span><span>Королёв, Россия, 141076</span></div>
+						</div>
+					</div>
+					<div class="footer__copyright">© 2017 «Авилор» .  Производитель и поставщик здорового и диетического питания.</div>
+				</div>
+			</footer>
+			<script src="../js/vendors/jquery-3.2.1.min.js"></script>
+			<script src="../js/vendors/chosen.jquery.js"></script>
+			<script src="../js/vendors/swiper.min.js"></script>
+			<script src="../js/vendors/lightbox.min.js"></script>
+			<script src="../js/vendors/rellax.min.js"></script>
+			<script src="../js/app.js"></script>
+		</div>
+	</body>
+</html>

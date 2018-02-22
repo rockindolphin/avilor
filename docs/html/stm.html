@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Avilor</title>
+		<link rel="stylesheet" href="../css/style.css?ver=151800672">
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="../css/sprite.css">
+		<script src="../js/vendors/svg4everybody.min.js"></script>
+	</head>
+	<body class="page">
+		<div class="page__body">
+			<header class="header page__header">
+				<div class="wrapper page__wrapper">
+					<div class="logo header__logo"><a class="link" href="index.html">
+							<div class="logo__pic"></div>
+							<div class="logo__text">
+								<div class="logo__text--title">
+									<svg class="icon icon--active icon--logo-text">
+										<use xlink:href="../images/sprite.svg#logo-text"></use>
+									</svg>
+								</div>
+								<div class="logo__text--subtitle">Здоровое и диетическое питание</div>
+							</div></a></div>
+					<div class="header__search">
+						<div class="input__wrapper input--rounded">
+							<input class="input" type="text" placeholder="Поиск">
+							<button class="btn btn--clr icon__wrapper">
+								<svg class="icon icon--active icon--search">
+									<use xlink:href="../images/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="info header__info"><a class="link info__phone" href="tel:+74959897431">+7 495 989-7431</a></div>
+					<div class="header__menu-btn">
+						<button class="btn btn--clr">
+							<svg class="icon icon--menu-toggle">
+								<use xlink:href="../images/sprite.svg#menu-toggle"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<div class="wrapper page__wrapper">
+						<div class="menu header__menu scroll--cutt">
+							<div class="menu__wrapper">
+								<div class="header__menu-btn">
+									<button class="btn btn--clr">
+										<svg class="icon icon--menu-toggle">
+											<use xlink:href="../images/sprite.svg#menu-toggle"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<ul class="list header__menu-list">
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="about.html">О компании</a></div>
+								</li>
+								<li class="list__item item--expanded item--active-trail">
+									<div class="nav__item"><a class="link" href="#">Каталог</a>
+										<button class="btn btn--clr">
+											<svg class="icon icon--active icon--chewron-down">
+												<use xlink:href="../images/sprite.svg#chewron-down"></use>
+											</svg>
+										</button>
+									</div>
+									<ul class="list">
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="lollipops.html">Леденцы</a></div>
+										</li>
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="gums.html">Жвачка</a></div>
+										</li>
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="bars.html">Батончики</a></div>
+										</li>
+										<li class="list__item">
+											<div class="nav__item"><a class="link" href="stm.html">СТМ</a></div>
+										</li>
+									</ul>
+								</li>
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="partners.html">Партнеры</a></div>
+								</li>
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="wholesale.html">Оптовикам</a></div>
+								</li>
+								<li class="list__item">
+									<div class="nav__item"><a class="link" href="contacts.html">Контакты</a></div>
+								</li>
+							</ul>
+							<div class="menu__wrapper">
+								<div class="info header__info header__nav-info"><a class="link info__phone" href="tel:+74959897431">+7 495 989-7431</a><a class="link info__email" href="mailto:sale@avilor.ru">sale@avilor.ru</a>
+									<div class="info__adress"><span>Московская область,  </span><span>город Королёв, </span><span>улица Калининградская, 12</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main class="main page__main">
+				<div class="wrapper page__wrapper">
+					<div class="blog blog--wide">
+						<h1 class="text--center text--normal">СТМ</h1>
+						<div class="text--center">
+							<select class="chosen-select-no-single" id="group_filter" data-placeholder="Выберите категорию" tabindex="2">
+								<option value="0">Все продукты СТМ</option>
+								<option value="1">Аптечная сеть «Ригла»</option>
+								<option value="2">Сеть аптек «Доктор Столетов»</option>
+							</select>
+						</div>
+						<h3 id="no-results" style="display:none;">Нет подходящих товаров									</h3>
+						<div class="product__group-wrapper" data-group="1">
+							<h3 class="product__group-title">Аптечная сеть «Ригла»</h3>
+							<div class="partner partner--aside-logo">
+								<div class="partner__pic"><img class="img" src="../images/partner-1.png" alt="" data-bg="false"></div>
+							</div>
+							<p class="text--compact">Ригла — национальная аптечная сеть, вторая по объёму продаж в России в и крупнейшая сеть по продажам лекарственных препаратов. Это команда профессионалов, передовые технологии аптечного бизнеса, широкий ассортимент и только качественные товары.</p><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-1.png" alt="" data-bg="false"></div>
+									<div class="product__title">Жевательная резинка «Азбука Здоровья» </div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-2.png" alt="" data-bg="false"></div>
+									<div class="product__title">Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-3.png" alt="" data-bg="false"></div>
+									<div class="product__title">Малиново-брусничный, батончик мюсли в йогуртовой глазури</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-1.png" alt="" data-bg="false"></div>
+									<div class="product__title">Жевательная резинка «Азбука Здоровья» </div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-2.png" alt="" data-bg="false"></div>
+									<div class="product__title">Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-3.png" alt="" data-bg="false"></div>
+									<div class="product__title">Малиново-брусничный, батончик мюсли в йогуртовой глазури</div></a></div>
+							<hr class="hr"><br><br>
+						</div>
+						<div class="product__group-wrapper" data-group="2">
+							<h3 class="product__group-title">Сеть аптек «Доктор Столетов»</h3>
+							<div class="partner partner--aside-logo">
+								<div class="partner__pic"><img class="img" src="../images/partner-2.png" alt="" data-bg="false"></div>
+							</div>
+							<p class="text--compact">Аптеки с широким ассортиментом не только лекарственных средств, но и товаров для здоровья, лечебной косметики, диетических и диабетических продуктов, биологически активных добавок, витаминов и спортивного питания.</p><br><br><br><br>
+							<div class="product__wrapper"><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-1.png" alt="" data-bg="false"></div>
+									<div class="product__title">Жевательная резинка «Азбука Здоровья» </div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-2.png" alt="" data-bg="false"></div>
+									<div class="product__title">Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-3.png" alt="" data-bg="false"></div>
+									<div class="product__title">Малиново-брусничный, батончик мюсли в йогуртовой глазури</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-1.png" alt="" data-bg="false"></div>
+									<div class="product__title">Жевательная резинка «Азбука Здоровья» </div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-2.png" alt="" data-bg="false"></div>
+									<div class="product__title">Леденцы «Азбука Здоровья» изготовленные по стариным рецептам на основе трав с витамином «С»</div></a><a class="link product" href="#" data-modal="product" data-group="1" data-bad="false" data-product="true">
+									<div class="product__pic"><img class="img" src="../images/stm-3.png" alt="" data-bg="false"></div>
+									<div class="product__title">Малиново-брусничный, батончик мюсли в йогуртовой глазури</div></a></div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer page__footer">
+				<div class="wrapper page__wrapper">
+					<div class="footer__holder">
+						<div class="logo footer__logo"><a class="link" href="index.html">
+								<svg class="icon icon--active icon--logo-full-white">
+									<use xlink:href="../images/sprite.svg#logo-full-white"></use>
+								</svg></a></div>
+						<ul class="list nav footer__menu-list">
+							<li class="list__item">
+								<div class="nav__item"><a class="link" href="inner.html">Информация</a></div>
+								<ul class="list">
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="about.html">О компании</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="#">Каталог</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="partners.html">Партнеры</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="wholesale.html">Оптовикам</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="contacts.html">Контакты</a></div>
+									</li>
+								</ul>
+							</li>
+							<li class="list__item">
+								<div class="nav__item"><a class="link" href="#">Каталог</a></div>
+								<ul class="list">
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="bars.html">Батончики</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="lollipops.html">Леденцы</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="gums.html">Жвачка</a></div>
+									</li>
+									<li class="list__item">
+										<div class="nav__item"><a class="link" href="stm.html">СТМ</a></div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="info footer__info"><a class="link info__phone" href="tel:+74959897431">+7 495 989-7431</a>
+							<div class="info__adress"><span>улица Калининградская, 12 </span><span>Королёв, Россия, 141076</span></div>
+						</div>
+					</div>
+					<div class="footer__copyright">© 2017 «Авилор» .  Производитель и поставщик здорового и диетического питания.</div>
+				</div>
+			</footer>
+			<script src="../js/vendors/jquery-3.2.1.min.js"></script>
+			<script src="../js/vendors/chosen.jquery.js"></script>
+			<script src="../js/vendors/swiper.min.js"></script>
+			<script src="../js/vendors/lightbox.min.js"></script>
+			<script src="../js/vendors/rellax.min.js"></script>
+			<script src="../js/app.js"></script>
+		</div>
+	</body>
+</html>
